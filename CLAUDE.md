@@ -15,3 +15,9 @@
 - Региональный голос (лексика, идиомы, реалии) — без этого текст звучит переведённым.
 
 В репо также лежат файлы performance-copywriting-skill: `SKILL.md`, `formulas.md`, `generator.md`, `triggers.md`, `quality-checks.md`, `hooks-library.md` — это другой скилл, но смежная тема, посмотри если задача шире чем UGC-история.
+
+## Финальный проход через humanizer
+
+После того как написал UGC-историю — **обязательно прогони текст через скилл `humanizer`** (вызывается через Skill). Он убирает следы AI-генерации: inflated symbolism, промо-фразы, инфляцию em-dash, rule of three, пассив, vague attributions, AI-vocabulary («delve», «navigate», «leverage» и т.п.). Это основано на гайде Wikipedia «Signs of AI writing».
+
+Скилл `humanizer` автоматически устанавливается в `~/.claude/skills/humanizer/` через SessionStart hook (`.claude/setup-session.sh`) при старте каждой сессии. Источник: https://github.com/blader/humanizer.git
