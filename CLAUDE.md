@@ -16,8 +16,24 @@
 
 В репо также лежат файлы performance-copywriting-skill: `SKILL.md`, `formulas.md`, `generator.md`, `triggers.md`, `quality-checks.md`, `hooks-library.md` — это другой скилл, но смежная тема, посмотри если задача шире чем UGC-история.
 
+## Обязательный self-check после написания UGC
+
+После того как UGC-история написана — в **том же ответе**, не отдельным сообщением — выдай блок самопроверки:
+
+```
+SELF-CHECK
+Структура (13 пунктов из story-formula.md): [галочки/крестики/комментарии]
+Логика (13 пунктов из story-formula.md): [галочки/крестики/комментарии]
+Найденные проблемы: [список или "чисто"]
+Жду твоего решения: [варианты правок]
+```
+
+Не «всё хорошо, готово». Конкретный список того, что проверил, и что нашёл. Не править автоматически — показать проблемы и ждать решения пользователя.
+
+Полный чек по обоим спискам (структура + логика) — в `.claude/story-formula.md`.
+
 ## Финальный проход через humanizer
 
-После того как написал UGC-историю — **обязательно прогони текст через скилл `humanizer`** (вызывается через Skill). Он убирает следы AI-генерации: inflated symbolism, промо-фразы, инфляцию em-dash, rule of three, пассив, vague attributions, AI-vocabulary («delve», «navigate», «leverage» и т.п.). Это основано на гайде Wikipedia «Signs of AI writing».
+После self-check (если пользователь подтвердил, что править нечего, или после правок) — **прогони текст через скилл `humanizer`** (вызывается через Skill). Он убирает следы AI-генерации: inflated symbolism, промо-фразы, инфляцию em-dash, rule of three, пассив, vague attributions, AI-vocabulary («delve», «navigate», «leverage» и т.п.).
 
 Скилл `humanizer` автоматически устанавливается в `~/.claude/skills/humanizer/` через SessionStart hook (`.claude/setup-session.sh`) при старте каждой сессии. Источник: https://github.com/blader/humanizer.git
