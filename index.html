@@ -27,30 +27,33 @@
        ============================================ */
 
     :root {
-      --med-primary: #0a4d8c;
-      --med-primary-dark: #073765;
-      --med-secondary: #1a73b8;
+      --med-primary: #1a5a96;
+      --med-primary-dark: #0e4274;
+      --med-secondary: #2b82c4;
       --med-bg: #ffffff;
-      --med-bg-soft: #f4f7fb;
-      --med-bg-tint: #eaf2f9;
-      --med-text: #1f2d3d;
-      --med-text-muted: #5a6b7c;
-      --med-border: #d8e1ec;
-      --med-border-soft: #e8eef5;
+      --med-bg-soft: #f6f9fc;
+      --med-bg-tint: #edf3f9;
+      --med-text: #2a3849;
+      --med-text-muted: #6b7a8c;
+      --med-border: #dde6ef;
+      --med-border-soft: #ecf1f6;
       --med-accent: #c0392b;
-      --med-accent-soft: #fdecea;
-      --med-success: #1f7a4d;
-      --med-warn: #b8860b;
-      --med-shadow: 0 1px 3px rgba(10, 77, 140, 0.06), 0 1px 2px rgba(10, 77, 140, 0.04);
-      --med-shadow-md: 0 4px 12px rgba(10, 77, 140, 0.08);
+      --med-accent-soft: #fdeeec;
+      --med-success: #2a8f5c;
+      --med-warn: #c39a3a;
+      --med-radius: 10px;
+      --med-radius-sm: 6px;
+      --med-shadow: 0 1px 3px rgba(26, 90, 150, 0.05), 0 1px 2px rgba(26, 90, 150, 0.03);
+      --med-shadow-md: 0 6px 18px rgba(26, 90, 150, 0.08);
+      --med-shadow-lg: 0 10px 30px rgba(26, 90, 150, 0.12);
     }
 
     html, body {
-      background: var(--med-bg-soft);
+      background: linear-gradient(180deg, #eef3f8 0%, #f6f9fc 200px, var(--med-bg-soft) 100%);
       color: var(--med-text);
       font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif;
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -59,9 +62,15 @@
       background: var(--med-bg);
       max-width: 900px;
       margin: 0 auto;
-      padding: 24px 28px 40px;
+      padding: 28px 32px 44px;
       box-shadow: var(--med-shadow-md);
       border: 1px solid var(--med-border-soft);
+      border-radius: var(--med-radius);
+      margin-top: 14px;
+    }
+
+    main img {
+      border-radius: var(--med-radius-sm);
     }
 
     main p {
@@ -120,23 +129,73 @@
     header {
       max-width: 900px;
       margin: 0 auto;
-      background: var(--med-bg);
-      border-bottom: 4px solid var(--med-primary);
+      background: linear-gradient(135deg, #0e4274 0%, #1a5a96 100%);
+      border-radius: var(--med-radius) var(--med-radius) 0 0;
+      box-shadow: var(--med-shadow-md);
+      overflow: hidden;
+      position: relative;
     }
 
-    .bg-image { text-align: center; }
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 15% 50%, rgba(255,255,255,0.06) 0, transparent 40%),
+        radial-gradient(circle at 85% 50%, rgba(255,255,255,0.04) 0, transparent 40%);
+      pointer-events: none;
+    }
+
+    .bg-image {
+      text-align: left;
+      padding: 18px 28px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .bg-image::before {
+      content: "";
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 2v20M2 12h20'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 22px 22px;
+    }
+
+    .bg-image::after {
+      content: "Gobierno de México · Secretaría de Salud";
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+      display: block;
+    }
+
     .bg-image img { max-width: 100%; height: auto; display: inline-block; }
     .text-container { display: block; }
 
     .h1-bg {
       position: relative;
       background: var(--med-bg);
-      padding: 22px 28px 18px;
+      padding: 26px 30px 20px;
       max-width: 900px;
       margin: 0 auto 18px;
       border: 1px solid var(--med-border);
-      border-top: 4px solid var(--med-primary);
-      box-shadow: var(--med-shadow);
+      border-top: 0;
+      border-radius: 0 0 var(--med-radius) var(--med-radius);
+      box-shadow: var(--med-shadow-md);
     }
 
     .h1-bg::before { display: none; }
@@ -153,7 +212,7 @@
       padding-top: 4px;
       font-size: 24px;
       font-weight: 700;
-      line-height: 1.3;
+      line-height: 1.35;
       letter-spacing: -0.015em;
     }
 
@@ -200,21 +259,21 @@
     /* ---------- Doctor quote / Doc block ---------- */
 
     .doc-block {
-      padding: 18px 22px;
+      padding: 20px 24px;
       border: 1px solid var(--med-border);
       border-left: 4px solid var(--med-primary);
       text-align: left;
       max-width: 100%;
-      margin: 22px 0;
+      margin: 24px 0;
       background: var(--med-bg-soft);
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
       box-shadow: var(--med-shadow);
     }
 
     .doc-block img {
       max-width: 100%;
       margin-bottom: 14px;
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
     }
 
     .doc-block p {
@@ -226,8 +285,8 @@
     .pachino-ramka {
       border: 1px solid var(--med-border);
       border-left: 4px solid var(--med-accent);
-      padding: 16px 20px;
-      border-radius: 4px;
+      padding: 18px 22px;
+      border-radius: var(--med-radius-sm);
       background: var(--med-accent-soft);
       box-shadow: var(--med-shadow);
     }
@@ -252,12 +311,12 @@
       font-weight: 500;
       border: 1px solid var(--med-border);
       border-left: 4px solid var(--med-success);
-      border-radius: 4px;
-      padding: 16px 20px;
+      border-radius: var(--med-radius-sm);
+      padding: 18px 22px;
       background: var(--med-bg-soft);
     }
 
-    .pachino-ramka312-block { margin: 18px 0; }
+    .pachino-ramka312-block { margin: 20px 0; }
 
     .pachino-ramka312 {
       box-shadow: var(--med-shadow);
@@ -266,8 +325,8 @@
       font-weight: 500;
       border: 1px solid var(--med-border);
       border-left: 4px solid var(--med-accent);
-      border-radius: 4px;
-      padding: 16px 20px;
+      border-radius: var(--med-radius-sm);
+      padding: 18px 22px;
       background: var(--med-bg-soft);
       margin-bottom: 0;
     }
@@ -285,7 +344,7 @@
       margin-top: 14px;
       border: 1px solid var(--med-border);
       box-shadow: var(--med-shadow);
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
       outline: none;
       padding: 4px;
       background: #fff;
@@ -293,16 +352,16 @@
 
     figure {
       margin: 22px 0;
-      padding: 14px;
+      padding: 16px;
       border: 1px solid var(--med-border-soft);
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
       background: var(--med-bg-soft);
     }
 
     figure img {
       width: 100%;
       height: auto;
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
       border: 1px solid var(--med-border);
       box-shadow: none;
       margin: 0 0 10px;
@@ -326,12 +385,12 @@
 
     .recept {
       background: var(--med-bg-soft);
-      padding: 18px 22px;
+      padding: 20px 24px;
       box-shadow: var(--med-shadow);
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
       border: 1px solid var(--med-border);
       border-top: 4px solid var(--med-primary);
-      margin: 22px 0;
+      margin: 24px 0;
     }
 
     .recept p b {
@@ -389,16 +448,16 @@
     .obertk512 {
       font-family: inherit;
       display: block;
-      box-shadow: var(--med-shadow);
+      box-shadow: var(--med-shadow-md);
       border: 1px solid var(--med-border);
       max-width: 100%;
-      margin: 24px 0;
+      margin: 26px 0;
       padding-bottom: 0;
       font-size: 16px;
       line-height: 1.6;
       color: var(--med-text);
       background: var(--med-bg);
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
       width: 100%;
       overflow: hidden;
     }
@@ -485,17 +544,17 @@
 
     .gray-bg.rev-block,
     .rev-block {
-      margin-bottom: 22px;
-      padding: 20px 22px;
+      margin-bottom: 24px;
+      padding: 22px 24px;
       background: var(--med-bg-soft);
       box-shadow: var(--med-shadow);
       border: 1px solid var(--med-border);
       border-left: 4px solid var(--med-secondary);
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
     }
 
     .rev-block img.img-card2 {
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
       border: 1px solid var(--med-border);
       padding: 0;
       margin-bottom: 14px;
@@ -516,11 +575,11 @@
     .table-block {
       font-family: inherit !important;
       display: block;
-      box-shadow: var(--med-shadow);
+      box-shadow: var(--med-shadow-md);
       border: 1px solid var(--med-border);
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
       max-width: 100%;
-      margin: 24px 0;
+      margin: 26px 0;
       padding-bottom: 0;
       font-size: 15px;
       line-height: 1.5;
@@ -622,18 +681,30 @@
       line-height: 1.5;
       color: var(--med-text);
       border: 1px solid var(--med-border);
-      border-top: 4px solid var(--med-primary);
+      border-top: 0;
       background-color: var(--med-bg);
-      box-shadow: var(--med-shadow-md);
+      box-shadow: var(--med-shadow-lg);
       display: flex;
       flex-direction: column;
       align-content: stretch;
       flex-wrap: nowrap;
-      border-radius: 4px;
+      border-radius: var(--med-radius);
       width: 100%;
       max-width: 781px;
-      margin: 24px auto;
+      margin: 32px auto;
       overflow: hidden;
+      position: relative;
+    }
+
+    .pachinoform::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--med-primary) 0%, var(--med-secondary) 50%, var(--med-primary) 100%);
+      z-index: 2;
     }
 
     .pachinoform_title {
@@ -642,8 +713,8 @@
       max-width: 100%;
       align-self: stretch;
       text-align: left;
-      padding: 16px 22px;
-      background: var(--med-bg-soft);
+      padding: 20px 26px;
+      background: linear-gradient(180deg, #f9fbfd 0%, var(--med-bg-soft) 100%);
       border-bottom: 1px solid var(--med-border-soft);
       align-items: center;
     }
@@ -762,13 +833,13 @@
     .pachinoform_price_new span {
       display: block;
       background: transparent;
-      color: var(--med-primary-dark);
+      color: var(--med-accent);
       text-shadow: none;
-      font-size: 28px;
+      font-size: 32px;
       padding: 0;
       font-weight: 700;
       line-height: 1;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.02em;
     }
 
     .pachinoform form {
@@ -820,23 +891,33 @@
     .pachinoform .button-submit {
       text-align: center;
       width: 100%;
-      margin: 6px auto 0;
+      margin: 10px auto 0;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
       color: #fff;
       border: 0;
-      padding: 14px 0;
+      padding: 16px 0;
       cursor: pointer;
-      background: var(--med-primary);
-      font-size: 15px;
+      background: linear-gradient(180deg, #1f6dad 0%, var(--med-primary) 100%);
+      font-size: 16px;
       line-height: 1.4;
-      font-weight: 600;
-      letter-spacing: 0.06em;
+      font-weight: 700;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      transition: background 0.18s;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(26, 90, 150, 0.25);
     }
 
-    .pachinoform .button-submit:hover { background: var(--med-primary-dark); }
+    .pachinoform .button-submit:hover {
+      background: linear-gradient(180deg, var(--med-primary) 0%, var(--med-primary-dark) 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(26, 90, 150, 0.32);
+    }
+
+    .pachinoform .button-submit:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 8px rgba(26, 90, 150, 0.22);
+    }
 
     .pachinoform ::placeholder {
       color: var(--med-text-muted);
@@ -847,11 +928,11 @@
     /* ---------- Comments ---------- */
 
     .comments {
-      margin-top: 28px;
+      margin-top: 30px;
       padding: 0;
       background: var(--med-bg);
       border: 1px solid var(--med-border);
-      border-radius: 4px;
+      border-radius: var(--med-radius-sm);
       box-shadow: var(--med-shadow);
       overflow: hidden;
     }
