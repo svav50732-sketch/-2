@@ -124,72 +124,206 @@
       font-weight: 600;
     }
 
-    /* ---------- Header ---------- */
+    /* ---------- Header (medical / government style) ---------- */
 
     header {
       max-width: 900px;
       margin: 0 auto;
-      background: linear-gradient(135deg, #0e4274 0%, #1a5a96 100%);
+      background: var(--med-bg);
       border-radius: var(--med-radius) var(--med-radius) 0 0;
       box-shadow: var(--med-shadow-md);
       overflow: hidden;
       position: relative;
+      border: 1px solid var(--med-border);
+      border-bottom: 0;
     }
 
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 15% 50%, rgba(255,255,255,0.06) 0, transparent 40%),
-        radial-gradient(circle at 85% 50%, rgba(255,255,255,0.04) 0, transparent 40%);
-      pointer-events: none;
-    }
-
+    /* Top utility strip */
     .bg-image {
-      text-align: left;
-      padding: 18px 28px;
-      display: flex;
-      align-items: center;
-      gap: 18px;
+      display: block;
+      padding: 0;
+      margin: 0;
       position: relative;
-      z-index: 1;
     }
 
     .bg-image::before {
+      content: "Sitio oficial · Información verificada · Actualizado " attr(data-today);
+      display: block;
+      background: var(--med-primary-dark);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 6px 22px;
+      line-height: 1.4;
+      text-align: right;
+    }
+
+    /* Main brand row */
+    .bg-image::after {
       content: "";
-      width: 46px;
-      height: 46px;
-      flex-shrink: 0;
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.25);
-      border-radius: 50%;
+      display: flex;
+      padding: 14px 22px;
+      gap: 14px;
+      align-items: center;
+      background: var(--med-bg);
+      border-bottom: 1px solid var(--med-border-soft);
+    }
+
+    .bg-image {
+      background: var(--med-bg);
+    }
+
+    .bg-image img { display: none; }
+
+    /* Build the brand block via real DOM injection through CSS — we replace it with a flex container */
+    header .bg-image {
+      display: grid;
+      grid-template-rows: auto auto auto;
+    }
+
+    .med-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 24px;
+      background: var(--med-bg);
+      border-bottom: 1px solid var(--med-border-soft);
+    }
+
+    .med-brand-logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--med-primary) 0%, var(--med-primary-dark) 100%);
       display: flex;
       align-items: center;
       justify-content: center;
-      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 2v20M2 12h20'/></svg>");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 22px 22px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 6px rgba(26, 90, 150, 0.25);
+      position: relative;
     }
 
-    .bg-image::after {
-      content: "Gobierno de México · Secretaría de Salud";
-      color: #ffffff;
-      font-size: 15px;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      line-height: 1.3;
+    .med-brand-logo::before {
+      content: "";
+      width: 26px;
+      height: 26px;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'><path d='M9 2a1 1 0 0 0-1 1v5H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h5v5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-5h5a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-5V3a1 1 0 0 0-1-1H9z'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    .med-brand-text {
+      line-height: 1.25;
+    }
+
+    .med-brand-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--med-primary-dark);
+      letter-spacing: 0.01em;
       display: block;
     }
 
-    .bg-image img { max-width: 100%; height: auto; display: inline-block; }
-    .text-container { display: block; }
+    .med-brand-sub {
+      font-size: 12px;
+      color: var(--med-text-muted);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 2px;
+      display: block;
+    }
+
+    .med-brand-meta {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 12px;
+      color: var(--med-text-muted);
+    }
+
+    .med-brand-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .med-brand-meta-item::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--med-success);
+      box-shadow: 0 0 0 3px rgba(42, 143, 92, 0.15);
+    }
+
+    .med-navbar {
+      display: flex;
+      background: var(--med-primary);
+      padding: 0 12px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .med-navbar::-webkit-scrollbar { display: none; }
+
+    .med-navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      padding: 12px 16px;
+      border-bottom: 3px solid transparent;
+      white-space: nowrap;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .med-navbar a:hover {
+      background: rgba(255,255,255,0.08);
+      text-decoration: none;
+    }
+
+    .med-navbar a.active {
+      border-bottom-color: #ffffff;
+      background: var(--med-primary-dark);
+    }
+
+    .med-utility-strip {
+      background: var(--med-primary-dark);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 6px 22px;
+      line-height: 1.4;
+      text-align: right;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .med-utility-strip span:first-child {
+      opacity: 0.85;
+      font-weight: 400;
+    }
+
+    /* Hide unused pseudo-elements on .bg-image so they don't render */
+    .bg-image::before,
+    .bg-image::after { display: none !important; content: none !important; }
+
+    /* Remove the empty gap div */
+    .text-container { display: none !important; }
 
     .h1-bg {
       position: relative;
       background: var(--med-bg);
-      padding: 26px 30px 20px;
+      padding: 26px 30px 22px;
       max-width: 900px;
       margin: 0 auto 18px;
       border: 1px solid var(--med-border);
@@ -771,32 +905,43 @@
       display: flex;
       color: var(--med-text);
       font-weight: 500;
-      font-size: 14px;
+      font-size: 15px;
       align-items: center;
       align-self: stretch;
       justify-content: center;
-      padding: 12px 22px;
+      padding: 14px 22px;
       background: var(--med-bg);
       border-bottom: 1px solid var(--med-border-soft);
-      gap: 10px;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .blc-pck {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 6px;
     }
 
     .pachinoform_value_current {
-      border: 1px solid var(--med-accent);
+      display: inline-block;
+      border: 1.5px solid var(--med-accent);
       color: var(--med-accent);
       background: var(--med-accent-soft);
       line-height: 1;
-      font-size: 16px;
-      padding: 6px 14px;
-      margin: 0 6px;
-      border-radius: 3px;
-      font-weight: 700;
+      font-size: 22px;
+      padding: 7px 14px;
+      margin: 0 4px;
+      border-radius: 4px;
+      font-weight: 800;
+      min-width: 42px;
+      text-align: center;
+      letter-spacing: 0;
     }
 
     .pachinoform_value_total {
-      font-size: 14px;
+      font-size: 17px;
       color: var(--med-text-muted);
-      font-weight: 400;
+      font-weight: 600;
     }
 
     .pachinoform_price {
@@ -1172,10 +1317,21 @@
 
     @media screen and (max-width: 768px) {
       main { padding: 18px 16px 28px; }
-      .h1-bg { padding: 18px 16px; }
-      .title_h1 { font-size: 20px; }
-      .main-subtitle { font-size: 15px; padding: 12px 14px; }
+      .h1-bg { padding: 20px 18px 16px; }
+      .title_h1 { font-size: 19px; line-height: 1.35; }
+      .main-subtitle { font-size: 14.5px; padding: 12px 14px; }
       main h2 { font-size: 19px; }
+
+      .med-utility-strip { padding: 6px 14px; font-size: 10px; gap: 10px; }
+      .med-utility-strip span:first-child { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .med-brand { padding: 14px 16px; gap: 10px; flex-wrap: wrap; }
+      .med-brand-logo { width: 44px; height: 44px; border-radius: 8px; }
+      .med-brand-logo::before { width: 22px; height: 22px; }
+      .med-brand-title { font-size: 14.5px; }
+      .med-brand-sub { font-size: 10.5px; }
+      .med-brand-meta { display: none; }
+      .med-navbar { padding: 0 6px; }
+      .med-navbar a { font-size: 12px; padding: 10px 12px; }
       .pachinoform_title { padding: 14px 16px; gap: 12px; }
       .pachinoform_order,
       .pachinoform form,
@@ -1209,32 +1365,33 @@
     .sf-hidden { display: none !important }
   </style>
 
-  <style class="sf-hidden">
-    @media (min-width:769px) {
-      .bg-image { text-align: center }
-      .bg-image img { max-width: 100%; height: auto; display: inline-block }
-      .text-container { display: block; margin-top: 20px }
-    }
-    @media (max-width:768px) {
-      .bg-image img {
-        width: 100%;
-        height: auto;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9999
-      }
-      .text-container { display: block; margin-top: 120px }
-    }
-  </style>
-
   <script src="js/dtime.js"></script>
 </head>
 
 <body>
   <header>
-    <div class="bg-image">
+    <div class="med-utility-strip">
+      <span>Sitio oficial · Información médica verificada</span>
+      <span>www.gob.mx/salud</span>
     </div>
+    <div class="med-brand">
+      <div class="med-brand-logo" aria-hidden="true"></div>
+      <div class="med-brand-text">
+        <span class="med-brand-title">Secretaría de Salud</span>
+        <span class="med-brand-sub">Gobierno de México</span>
+      </div>
+      <div class="med-brand-meta">
+        <span class="med-brand-meta-item">En línea</span>
+      </div>
+    </div>
+    <nav class="med-navbar" aria-label="Secciones">
+      <a href="#" class="active">Inicio</a>
+      <a href="#">Publicaciones</a>
+      <a href="#">Programas</a>
+      <a href="#">Especialistas</a>
+      <a href="#">Contacto</a>
+    </nav>
+    <div class="bg-image"></div>
   </header>
   <div class="text-container"></div>
   <div class="h1-bg split">
