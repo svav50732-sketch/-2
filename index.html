@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="sr-ME">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<meta charset="utf-8">
+<title>Portal Zdravlja Crne Gore – Iskusna podologinja iz Podgorice otkrila prirodnu metodu za obnovu noktiju i kože, koja zaustavlja gljivicu u korijenu</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="no-cache" http-equiv="Cache-Control">
+<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta content="no-referrer" name="referrer">
+<meta content="noindex, nofollow" name="robots">
+<link rel="icon" href="noktal.png">
+
+<style>
+:root{
+  --bg:#fbf7ee;
+  --paper:#ffffff;
+  --ink:#2a2a25;
+  --muted:#5b5b50;
+  --accent:#2f7a3f;          /* тёплый зелёный — травы, природа */
+  --accent-2:#bf8a2a;        /* охра — рукотворность, мастер */
+  --warn:#c0392b;
+  --soft:#f1e9d3;
+  --line:#e1d8bf;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+
+/* ---------- header ---------- */
+header{background:#fffdf6;border-bottom:3px double var(--accent-2)}
+.topbar{max-width:920px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;font-size:14px;color:var(--muted)}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Playfair Display",Georgia,serif;font-weight:700;color:var(--accent);font-size:22px;letter-spacing:.3px}
+.brand .dot{width:14px;height:14px;border-radius:50%;background:var(--accent-2);display:inline-block}
+.section{background:var(--soft);color:var(--muted);font-style:italic}
+
+main{max-width:920px;margin:0 auto;padding:18px;background:var(--paper);box-shadow:0 0 18px rgba(0,0,0,.05)}
+
+/* ---------- typography ---------- */
+h1.title_h1{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:30px;line-height:1.25;color:#1f1f1c;margin:6px 0 14px;
+  border-bottom:3px solid var(--accent-2);padding-bottom:14px
+}
+h1 .head-one-part{color:var(--warn);display:block;font-size:22px;margin-bottom:6px;letter-spacing:.5px;text-transform:uppercase}
+h2{font-family:"Playfair Display",Georgia,serif;font-size:24px;line-height:1.3;color:var(--accent);margin:30px 0 12px;border-left:5px solid var(--accent-2);padding-left:14px}
+h2 span{display:block;margin-top:8px;font-size:18px;color:var(--muted);font-style:italic;font-weight:400}
+p{margin:0 0 14px}
+b{color:#1f1f1c}
+.red-txt{color:var(--warn);font-weight:600}
+
+.head-main-date{font-size:14px;color:var(--muted);font-style:italic;margin-bottom:10px}
+.head-main-date-title{font-weight:600;color:#1f1f1c;font-style:normal;margin-right:4px}
+
+.main-subtitle{
+  background:#fffbef;border-left:5px solid var(--accent);
+  padding:14px 16px;border-radius:4px;
+  font-size:19px;line-height:1.45;color:#3a3a32;font-style:italic;
+  margin:8px 0 22px;box-shadow:0 1px 4px rgba(0,0,0,.04)
+}
+
+/* ---------- author intro ---------- */
+.author-card{
+  display:flex;gap:16px;align-items:center;
+  background:var(--soft);border:1px solid var(--line);border-radius:6px;
+  padding:14px;margin:18px 0
+}
+.author-card img{width:110px;height:110px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 1px 6px rgba(0,0,0,.15)}
+.author-card .ai{font-size:17px}
+.author-card .ai b{display:block;font-size:20px;color:var(--accent);margin-bottom:4px}
+.author-card .ai small{display:block;color:var(--muted);font-style:italic;margin-top:4px}
+
+/* ---------- quote / doc-block ---------- */
+.doc-block{
+  padding:18px 20px;border-left:5px solid var(--accent-2);
+  background:#fffaef;margin:22px 0;border-radius:0 6px 6px 0;
+  box-shadow:0 1px 6px rgba(0,0,0,.05)
+}
+.doc-block p{margin:0 0 10px}
+.doc-block p:last-child{margin-bottom:0}
+
+.pachino-ramka{border:2px solid var(--warn);padding:16px;border-radius:6px;background:#fff5f3;margin:18px 0}
+.pachino-ramka .ramka-title{display:block;font-weight:700;color:var(--warn);margin-bottom:8px}
+.pachino-ramka2{border:2px solid var(--accent);padding:16px;border-radius:6px;background:#f3faf3;color:#1d5a2a;font-weight:600;margin:18px 0;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.pachino-ramka312-block{margin:18px 0}
+.pachino-ramka312{border:2px solid var(--warn);background:#fff5f3;padding:16px;border-radius:6px;color:var(--warn);font-weight:600}
+
+/* ---------- figures ---------- */
+figure{margin:24px 0;text-align:center}
+figure img,.img-card{
+  border:10px solid #fff;border-radius:4px;
+  box-shadow:0 3px 12px rgba(0,0,0,.18);
+  outline:1px solid var(--line);
+  max-width:600px;margin:0 auto
+}
+figcaption{font-size:15px;color:var(--muted);font-style:italic;margin-top:8px;padding:0 12px}
+
+/* ---------- list ---------- */
+ul.symptoms{list-style:none;padding:0;margin:14px 0;background:#fffbef;border:1px solid var(--line);border-radius:6px;padding:14px 18px}
+ul.symptoms li{position:relative;padding-left:28px;margin-bottom:8px;line-height:1.4}
+ul.symptoms li:before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-weight:700;font-size:20px}
+
+/* ---------- recipe ---------- */
+.recept{background:#fffaef;border:2px dashed var(--accent-2);padding:18px 20px;border-radius:8px;margin:22px 0}
+.recept .my-ul-0-green{list-style:none;padding:0;margin:8px 0 0}
+.recept .my-ul-0-green li{padding-left:24px;position:relative;margin-bottom:10px;line-height:1.3}
+.recept .my-ul-0-green li:before{content:"❀";position:absolute;left:0;top:0;color:var(--accent);font-size:18px}
+.recept .my-ul-0-green b{color:var(--accent);font-size:18px}
+.recept .my-ul-0-green font{display:block;color:var(--muted);font-size:16px;margin-top:3px}
+
+/* ---------- mechanisms ---------- */
+.obertk512{background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.06);margin:24px 0;overflow:hidden}
+.obertk512 h1{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:22px;background:var(--soft);color:#1f1f1c;padding:14px 18px;border-bottom:1px solid var(--line)}
+.block-offer-actions-block{padding:8px 18px}
+.block-offer-actions-block ol{padding-left:22px;margin:8px 0}
+.block-offer-actions-block ol li{padding:12px 0;border-bottom:1px solid var(--line)}
+.block-offer-actions-block ol li:last-child{border-bottom:none}
+.block-offer-actions-block ol li::marker{font-weight:700;color:var(--accent)}
+.block-offer-actions-block ol li font{display:block;color:var(--accent);font-weight:700;font-size:18px;margin-bottom:4px}
+.block-offer-actions-block ol li span{display:block;color:#3a3a32;font-size:16px;line-height:1.4}
+
+/* ---------- table ---------- */
+.table-block{max-width:600px;margin:24px auto;border-radius:8px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08);border:1px solid var(--line)}
+.table-block h1{margin:0;background:var(--soft);font-family:"Playfair Display",Georgia,serif;font-size:18px;font-weight:600;color:#1f1f1c;padding:14px;border-bottom:1px solid var(--line)}
+.table{width:100%;border-collapse:collapse;background:#fff}
+.table td{padding:10px 14px;border-bottom:1px solid var(--line);font-size:16px;vertical-align:middle}
+.table tr:last-child td{border-bottom:none}
+.table td.one{color:#3a3a32}
+.table td.two{font-weight:700;color:var(--accent);text-align:right;white-space:nowrap}
+
+/* ---------- review block (story) ---------- */
+.gray-bg.rev-block{
+  background:#fffaef;border:1px solid var(--line);border-radius:8px;
+  padding:18px;margin:22px 0;box-shadow:0 1px 8px rgba(0,0,0,.05)
+}
+.rev-block .img-card2{max-width:300px;border:6px solid #fff;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.15);float:left;margin:0 16px 8px 0}
+.rev-block font{display:block;clear:both;margin-top:10px;color:var(--accent);font-weight:700;font-style:italic}
+
+/* ---------- CTA / form ---------- */
+.noclose-cta{font-size:17px;font-weight:600;max-width:720px;margin:18px auto 8px;text-align:center}
+.pre-cta{display:block;text-align:center;color:var(--accent);font-weight:600;font-size:18px;margin-bottom:14px}
+.number-me{color:var(--warn);font-weight:700}
+
+.pachinoform{
+  max-width:600px;margin:18px auto;padding:18px;
+  border:3px solid var(--accent);border-radius:12px;background:#fff;
+  box-shadow:0 4px 16px rgba(0,0,0,.1)
+}
+.pachinoform_title{display:flex;align-items:center;gap:14px;justify-content:center;text-align:center;margin-bottom:8px}
+.pachinoform_title_logo{flex-shrink:0;width:48px;height:48px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;font-family:Georgia,serif}
+.pachinoform_title_text{font-weight:700;font-size:15px;line-height:1.3}
+.pachinoform_order{text-align:center;font-size:15px;margin:10px 0 12px}
+.pachinoform_order b{color:var(--warn)}
+.pachinoform_value{display:flex;justify-content:center;align-items:center;gap:6px;color:var(--accent);font-weight:700;font-size:18px;margin-bottom:8px}
+.pachinoform_value_current{border:2px solid var(--warn);color:var(--warn);padding:4px 12px;border-radius:4px;font-size:20px}
+.pachinoform_price{display:flex;justify-content:center;align-items:center;gap:18px;margin:10px 0 14px}
+.price_old{font-size:24px;color:#1f1f1c;text-decoration:line-through;text-decoration-color:var(--warn);text-decoration-thickness:3px}
+.price_main{background:var(--warn);color:#fff;padding:6px 16px;border-radius:4px;font-size:30px;font-weight:700;text-shadow:1px 1px 0 rgba(0,0,0,.2)}
+.pachinoform label{display:block;font-weight:700;margin:8px 0 4px;font-size:15px}
+.pachinoform input[type=text],.pachinoform input[type=tel]{
+  width:100%;padding:12px 14px;border:2px solid var(--line);border-radius:6px;
+  font-family:inherit;font-size:17px;background:#fffbef;outline:none
+}
+.pachinoform input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(47,122,63,.15)}
+.button-submit{
+  width:100%;margin-top:14px;padding:16px;border:none;border-radius:8px;
+  background:var(--warn);color:#fff;font-weight:700;font-size:18px;letter-spacing:.5px;
+  cursor:pointer;transition:.2s;font-family:inherit
+}
+.button-submit:hover{background:#a02f22}
+.pachinoform_footer{text-align:center;font-size:13px;color:var(--muted);margin-top:10px}
+
+/* ---------- comments ---------- */
+.comments{margin-top:30px;border-top:2px solid var(--line);padding-top:20px}
+.comments__header{margin-bottom:18px}
+.comments__header-title{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:22px;color:var(--accent)}
+.comments__item{padding:14px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.comments__item.reply{margin-left:40px;padding-left:14px;border-left:3px solid var(--soft);background:#fffbef;padding:12px 14px;border-radius:0 8px 8px 0;margin-top:8px;margin-bottom:8px}
+.comments__item-header{display:flex;align-items:center;gap:10px}
+.comments__item-avatar{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;background:var(--soft)}
+.comments__item-info p{margin:0;line-height:1.2}
+.comments__item-name{font-weight:700;color:#1f1f1c;font-size:16px}
+.comm-date{font-size:13px;color:var(--muted);font-style:italic}
+.comments__item-content{font-size:16px;margin:0;line-height:1.45}
+
+/* ---------- responsive ---------- */
+@media (max-width:600px){
+  body{font-size:18px}
+  main{padding:14px}
+  h1.title_h1{font-size:24px}
+  h1 .head-one-part{font-size:18px}
+  h2{font-size:20px}
+  .author-card{flex-direction:column;text-align:center}
+  .author-card img{width:120px;height:120px}
+  .rev-block .img-card2{float:none;margin:0 auto 12px}
+  .pachinoform_price{flex-wrap:wrap}
+  .comments__item.reply{margin-left:18px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="brand"><span class="dot"></span> Portal Zdravlja CG</div>
+    <div class="section">Rubrika: Zdravlje stopala · <span id="header-date"></span></div>
+  </div>
+</header>
+
+<main>
+
+  <h1 class="title_h1">
+    <span class="head-one-part">AKO IMATE PREKO 50 GODINA — VAŠI NOKTI MOŽDA SE VEĆ POLAKO RAZARAJU</span>
+    <span class="head-two-part">Iskusna podologinja iz Podgorice, sa 15 godina prakse, otkriva prirodnu metodu koja zaustavlja gljivicu i obnavlja zdrave nokte — bez tableta, bez operacije i bez sramote pred ljekarom</span>
+  </h1>
+
+  <div class="head-main-date">
+    <span class="head-main-date-title">Objavljeno:</span>
+    <span id="pub-date"></span>, 09:36
+  </div>
+
+  <div class="main-subtitle">
+    Milica Vuković, podologinja iz Podgorice, za 15 godina rada u svom kabinetu vidjela je više od 7.000 ženskih stopala. „Najteže nije bila gljivica“, kaže ona. „Najteže je bilo gledati kako žene plaču pred mnom od stida što moraju da skinu čarapu.“ Danas dijeli svoju metodu sa cijelom Crnom Gorom.
+  </div>
+
+  <img alt="Milica Vuković u svom kabinetu" src="https://static.joxi.pro/1776416338123-4ac0fa60-3c93-447c-999d-6732427ba158.jpg" style="margin-bottom:18px;border-radius:6px">
+
+  <p>
+    Crna Gora se tiho suočava sa epidemijom o kojoj se ne priča naglas. Požutjeli i zadebljani nokti, koje su žene godinama smatrale „samo kozmetičkim problemom“ ili „znakom godina“, danas su jedan od najčešćih razloga za odlazak kod podologa. Iza svakog takvog nokta krije se priča o stidu, izolaciji i — u nekim slučajevima — o realnoj opasnosti za zdravlje stopala.
+  </p>
+
+  <p>
+    Milica Vuković je podologinja iz Podgorice koja se tom problemu posvetila prije 15 godina, kada je počela da radi u jednom običnom kozmetičkom salonu na Staroj Varoši. Danas vodi sopstveni kabinet, a njeno ime poznaju i u Nikšiću, Baru, Beranama i Pljevljima. Kroz njene ruke prošle su domaćice, penzionerke, učiteljice, ali i poznate ličnosti iz cijele zemlje.
+  </p>
+
+  <p>
+    Rijetko daje intervjue: kaže da joj je važnije da bude u svom kabinetu, sa svojim klijenticama. Ipak, na naše uporno pitanje pristala je da otkrije svoju autorsku metodu, koja, kako tvrdi, može aktivirati obnovu noktiju i kože stopala čak i kod žena u dobi 70–85 godina.
+  </p>
+
+  <div class="author-card">
+    <img src="images/da896c23e368_8b55fd4e.png" alt="Milica Vuković">
+    <div class="ai">
+      <b>Milica Vuković</b>
+      Podologinja, 53 godine, Podgorica.
+      <small>15 godina prakse · preko 7.000 obrađenih stopala · autorska metoda za njegu noktiju u dobi 45+</small>
+    </div>
+  </div>
+
+  <div class="doc-block">
+    <p><b>Milica Vuković:</b></p>
+    <p>„Kada sam prije 15 godina počela da radim, mislila sam da ću skratiti nokte, masirati stopala i to je sve. Već nakon prve godine sam shvatila da sam zapravo postala — ispovjednik. Žene su sjedjele u stolici i šaputale mi šta im se dešava kod kuće. Da muž više neće da spava u istom krevetu zbog mirisa. Da unuka odbija da im sjedne u krilo. Da su prestale ići u banju, na more, na svadbe.“</p>
+    <p><b>NAŠ CILJ JE DA TIJELO PONOVO NAUČI DA OBNAVLJA NOKAT I KOŽU STOPALA I DA ZAUSTAVI GLJIVICU U KORIJENU — U MOM KABINETU TO USPIJEVA U 98,7% SLUČAJEVA, <span class="red-txt">A SA TIM SE VRAĆA I NEŠTO MNOGO VAŽNIJE — POVJERENJE U SOPSTVENA STOPALA.</span></b></p>
+  </div>
+
+  <p>
+    Milica je uvjerena da svaka žena može potpuno zaustaviti gljivicu na noktima i aktivirati regeneraciju oštećenog tkiva direktno kod kuće, na jednostavan i prirodan način — bez tableta koje opterećuju jetru i bez skupih klinika u koje je, kako kaže, „polovini njenih klijentica neprijatno i da uđe“.
+  </p>
+
+  <p>
+    Za razliku od industrijskih krema, njen pristup zasniva se isključivo na prirodnim sastojcima, BEZ AGRESIVNE HEMIJE, kojom su apoteke pune i koja često nanosi više štete nego koristi.
+  </p>
+
+  <h2>
+    Obične kreme i tablete protiv gljivica ne rješavaju problem<br>
+    <span>Mit koji uništava nokte žena 45+ već 30 godina</span>
+  </h2>
+
+  <p><b>Milica Vuković:</b></p>
+
+  <p>— Zaista li vjerujete da obične kreme ili tablete protiv gljivica, koje djeluju samo na površini, mogu zaustaviti razaranje nokta koji raste odozdo, iz korijena? Vidjela sam to hiljadama puta. Žena godinu dana mazala mast iz apoteke, plaćala 30 eura mjesečno, a nokat svaki put izgledao gore. Zašto? Zato što obične kreme ne prolaze kroz nokatnu ploču, a tablete sa godinama postaju opasne — jetra i bubrezi poslije 50. više ne podnose hemiju tako lako kao u tridesetim.</p>
+
+  <p>Ovo posebno važi za nokte na nogama. Sa godinama nokat slabi, krvotok u stopalu postaje sporiji, koža se isušuje — i gljivica dobija idealne uslove. U dubokim slojevima nokatne ploče problem se razvija mjesecima bez vidljivih simptoma. A onda, jednog jutra, žena pogleda dolje i vidi da je palac potpuno žut.</p>
+
+  <p>Molim vas, pogledajte ovu sliku. Ovo je stopalo žene od 44 godine — moja klijentica. Kada je prvi put došla, mislila je da je „samo malo požutio“. Za dvije godine, dok je probavala mast za mašću, došli smo do ozbiljnih oštećenja. U <b>vrlo zapuštenim slučajevima, naročito kod žena sa dijabetesom ili lošim krvotokom, takvo zanemarivanje može da prijeti i amputacijom</b> — i mada to nije pravilo, dužna sam da o tome govorim iskreno.</p>
+
+  <figure>
+    <img class="img-card" src="https://static.joxi.pro/1772713308728-94700574-c49e-490b-a0ef-f6b2608ba749.jpg">
+    <figcaption>
+      Stopalo klijentice (44 godine). Sve je počelo običnim žutilom palca. Dvije godine bezuspješnog mazanja apotekarskim mastima — i evo rezultata: prošireno oštećenje, ljuštenje kože, bol pri hodu. Slučaj zaustavljen na vrijeme.
+    </figcaption>
+  </figure>
+
+  <div class="pachino-ramka312-block">
+    <p class="pachino-ramka312">
+      Žutilo nokta i neprijatan miris stopala poslije 45–50. godine skoro nikada nijesu „samo kozmetika“. U većini slučajeva to je već gljivična infekcija koja je ušla u dublje slojeve nokatne ploče. A kada uđe duboko — obične kreme više ne dopiru do nje.
+    </p>
+  </div>
+
+  <p><b>Milica Vuković:</b></p>
+
+  <p>— Slušajte me dobro. Ja nijesam ljekar, ja sam podologinja. Ali sam za 15 godina vidjela više stopala nego mnogi dermatolozi. I znam jednu stvar koju će vam malo ko reći: <b>gljivica ne odlazi sama. Ona čeka.</b> Čeka da prestanete da mažete, čeka zimu, čeka stres — i onda se vraća jača nego prije.</p>
+
+  <p>Ono što savremena medicina nudi u zapuštenim slučajevima jeste skupa procedura vađenja nokta ili sistemska antimikotična terapija. Iskreno? <b class="red-txt">U mom kabinetu sam vidjela koliko žena pati poslije te operacije.</b> Mjesecima ne mogu da obuju zatvorenu cipelu, bole ih svi nervni završeci, a u dvije trećine slučajeva — gljivica se vrati za godinu-dvije, jer korijen problema nije riješen.</p>
+
+  <figure>
+    <img src="https://static.joxi.pro/1776414580466-c36bb6a9-559e-4319-a9c9-c835c8d18754.jpg">
+    <figcaption>
+      Operacija vađenja nokta i kursevi tableta opterećuju organizam žene poslije 50. mnogo više nego što se obično priča. Oporavak je dug, a u dvije trećine slučajeva gljivica se vrati — jer uzrok ostaje.
+    </figcaption>
+  </figure>
+
+  <h2>
+    Žene poslije 45. zaslužuju da znaju istinu o svojim stopalima<br>
+    <span>Jer „starenje“ nije izgovor, a stid nije presuda</span>
+  </h2>
+
+  <p>— Ako imate više od 45 godina i mislite da je svakodnevno žutilo nokta „normalno za godine“, ta rečenica vas može koštati zdravih stopala. U mom kabinetu, od svake desete klijentice koja je tako razmišljala, šest je došlo prekasno za jednostavno rješenje — morale smo da idemo na duže, ozbiljnije postupke. <b>A kod dvije od njih bilo je potrebno i savjetovanje sa hirurgom.</b> Ne želim da plašim — želim da budem iskrena.</p>
+
+  <p><b>Ako je proces razaranja nokta već počeo, obične apotekarske kreme ga ne mogu zaustaviti.</b></p>
+
+  <p>Evo simptoma koje sam, za 15 godina prakse, naučila da prepoznajem kao prve signale ozbiljnog problema:</p>
+
+  <ul class="symptoms">
+    <li>Žutilo i zamućenje nokta već od jutra</li>
+    <li>Zadebljanje nokatne ploče, posebno na palcu</li>
+    <li>Bol i osjećaj pečenja između prstiju</li>
+    <li>Noćni svrab na stopalima i prstima</li>
+    <li>Vidljivo ljuštenje i krunjenje nokta</li>
+    <li>Nelagoda pri dugom stajanju ili u zatvorenoj obući</li>
+    <li>Osjećaj težine i napetosti u prstima</li>
+    <li>Svrab i crvenilo oko nokatne ploče</li>
+    <li>Promjena boje i zadebljanje kože na peti</li>
+    <li>Pukotine i rane koje sporo zacjeljuju</li>
+    <li>Neprijatan miris koji se ne pere</li>
+  </ul>
+
+  <p>
+    Svaki ovaj simptom je glas vašeg stopala koji vas moli za pažnju. Žene koje slušaju svoja stopala — pobjeđuju gljivicu. Žene koje ih ignorišu zato što ih je „sram čak i sebi to priznati“ — gube vrijeme. A kod gljivice vrijeme znači sve.
+  </p>
+
+  <p>
+    Pogledajte slike koje su mi ostavile bivše klijentice — da bismo, sa njihovom dozvolom, mogle da upozorimo druge žene.
+  </p>
+
+  <figure>
+    <img class="img-card" src="https://static.joxi.pro/1776412704403-7fe82583-7549-41ee-8c89-f40590e4f68e.jpg">
+    <figcaption>Klijentica, 52 godine. Uznapredovala gljivica, oba stopala. Tri godine je nosila zatvorene cipele i ljeti — od stida da iko vidi njena stopala.</figcaption>
+  </figure>
+  <figure>
+    <img class="img-card" src="https://static.joxi.pro/1776412704402-ca8af026-97d6-4b7c-be6e-bbe3c1124edf.jpg">
+    <figcaption>Gljivica 3. stepena. Nokti su deformisani, ljušte se, koža oko njih je upaljena. Hod postaje bolan.</figcaption>
+  </figure>
+  <figure>
+    <img class="img-card" src="https://static.joxi.pro/1776412704402-0fd3d326-4745-4737-bf94-4e34c4e0026e.jpg">
+    <figcaption>Duboka gljivična infekcija. U kabinetu sam ovo viđala kod žena koje su godinama mazale apotekarske masti.</figcaption>
+  </figure>
+  <figure>
+    <img class="img-card" src="https://static.joxi.pro/1776412704402-7728407f-a77c-40db-a83e-654aeb1a0e81.jpg">
+    <figcaption>Hronična onihomikoza, otok, jak bol pri stajanju. Klijentica je prestala ići u prodavnicu i molila je sina da joj donosi namirnice.</figcaption>
+  </figure>
+  <figure>
+    <img class="img-card" src="https://static.joxi.pro/1776412704401-3f976f1a-e490-4e3c-b64d-3a0d78bb953f.jpg">
+    <figcaption>Promjena boje i zadebljanje kože — gljivica se proširila i na petu i bočne strane stopala.</figcaption>
+  </figure>
+
+  <div class="pachino-ramka312-block">
+    <p class="pachino-ramka312">
+      Svaki dan koji prolazi sa neliječenom gljivicom — to je dan u kojem se infekcija šalje dublje. Hiljade žena u Crnoj Gori su dozvolile da iz „običnog žutila“ izrastu ozbiljni problemi sa stopalima. Ne dozvolite to sebi. Vaša stopala su nosila vas, djecu, unuke, životne brige — zaslužuju da im se vratite.
+    </p>
+  </div>
+
+  <p><b>Milica Vuković:</b></p>
+
+  <p>— Sve su mislile da se njima to neće desiti. „Ja sam čista žena“, „kod mene to ne može“, „imam dobre cipele“. A gljivica ne bira. Ona bira stopalo koje je oslabilo — a sa godinama, vjerujte mi, svako stopalo malo oslabi. Zato vam danas pišem ovo, kao žena ženi: ako imate preko 45, ne čekajte da vidite ovakve slike na svojim nogama. Ostalo vam je vremena — ali nije puno.</p>
+
+  <h2>
+    Kako sam, kroz 15 godina rada u kabinetu, sastavila ovu metodu<br>
+    <span>Iz svake klijentice — po jedna mudrost. Iz svake nesreće — po jedan sastojak.</span>
+  </h2>
+
+  <p><b>Milica Vuković:</b></p>
+
+  <p>— Ova metoda nije nastala u laboratoriji. Nastala je u mom kabinetu, korak po korak, preko 15 godina.</p>
+
+  <p>Sve je počelo jednog ljeta, davne 2010. godine. Imala sam klijenticu — gospođu Anu, 78 godina. Nokti su joj bili u groznom stanju, došla je sa snahom jer se sama stidjela. Pokušale smo sve što sam tada znala. Ništa nije pomagalo. A ona, dok je sjedjela u stolici, ćaskala je sa mnom i između priče rekla: „Znaš dijete, moja baba je nama, kad smo bile mlade, stopala mazala s onim uljem od čajevca i bijelim lukom u sirćetu. Niko od nas nije imao ni gljivicu ni žulj.“</p>
+
+  <p>Te noći nijesam mogla da spavam. Zapisala sam to u svesku. Već sledeće sedmice — druga klijentica, druga priča. Žena iz Pljevalja se sjećala kako je njena svekrva pravila kupke od kurkume. Treća — kako je majka koristila ricinusovo ulje i sok bijelog luka. Tako sam, godinama, vodila svesku koju sam zvala <b>„Stari recepti mojih baba“</b>. Vodila sam je u tajnosti — bojala sam se da će me kolege ismijati.</p>
+
+  <div class="doc-block">
+    <p>„Nisam vjerovala da će mi nekad dobro doći. A sad ta sveska ima 187 stranica. I svaki sastojak u njoj — došao je od neke žene, neke bake, neke priče za stolicom u mom kabinetu.“</p>
+    <p><b>— Milica Vuković, podologinja</b></p>
+  </div>
+
+  <p>Prije 4 godine sam se konačno odlučila. Uzela sam tu svesku, uzela sve što sam u međuvremenu naučila iz savremene podologije, i počela da sastavljam formulu. Trajalo je više od dvije godine. Probala sam na sebi, na sestri, na desetak dobrovoljnih klijentica. Mijenjala sam proporcije, dodavala, oduzimala. Tek 2024. sam dobila ono što sam htjela.</p>
+
+  <p>Tako je nastao <b>Noktal</b> — gel koji u sebi nosi 15 godina mog rada, 187 stranica babinih recepata i 36 mjeseci laboratorijskog usavršavanja u saradnji sa farmaceutima iz Podgorice.</p>
+
+  <div class="recept">
+    <p><b>Formula sadrži sljedeće aktivne sastojke (iz „sveske mojih baba“ + savremena ekstrakcija):</b></p>
+    <ul class="my-ul-0-green">
+      <li><b>Ulje čajevca</b><font>Ekstrakt čajevca: 4500 mg — savjet gospođe Ane iz 2010.</font></li>
+      <li><b>Kaprilna kiselina</b><font>Kokosovo ulje: 1100 mg</font></li>
+      <li><b>Alicin</b><font>Bijeli luk, ekstrakt: 390 mg — recept iz Pljevalja</font></li>
+      <li><b>Berberin</b><font>Žuti korijen, ekstrakt: 4200 mg</font></li>
+      <li><b>Undecilenska kiselina</b><font>Ricinusovo ulje, ekstrakt: 1100 mg — savjet teta Stane iz Bara</font></li>
+      <li><b>Resveratrol</b><font>Grožđe, ekstrakt: 320 mg</font></li>
+      <li><b>Kurkumin</b><font>Kurkuma, ekstrakt: 2300 mg — recept iz Berana</font></li>
+    </ul>
+  </div>
+
+  <p>
+    Najveći broj ovih sastojaka u tačnoj koncentraciji vrlo je teško nabaviti u Crnoj Gori. Mnogi se naručuju iz inostranstva. A precizna doza — 0,1 mg odstupanja može sve da uništi. Zato „kućna varijanta“ nikad ne daje isti rezultat: bake su znale šta, ali nisu znale koliko. Tek sa savremenom ekstrakcijom dolaze pravi efekti.
+  </p>
+
+  <h2>
+    Noktal — jedini gel u kojem se susrijeću tradicija i savremena nauka<br>
+    <span>Sa još 29 rijetkih biljnih ekstrakata, podržava obnovu nokta i zdravu kožu stopala</span>
+  </h2>
+
+  <p><b>Milica Vuković:</b></p>
+
+  <p>— Noktal je gel za spoljnu upotrebu. Nanosi se direktno na zahvaćen nokat i kožu, jednom dnevno, najbolje uveče. Trenutno je to jedini proizvod koji u sebi spaja tradicionalne sastojke iz „sveske mojih baba“ i savremenu „Hipermolekularnu ekstrakciju“, koja aktivne supstance dovodi do dubokih slojeva nokatne ploče sa preciznošću do 0,01 nm. To znači — kreme iz apoteka rade na površini, a Noktal stiže tamo gdje gljivica zaista živi.</p>
+
+  <img src="https://static.joxi.pro/1776760013972-e6f2b181-8ee5-4fd9-b206-2ddacccc9516.jpg" style="max-width:340px;margin:0 auto" alt="Noktal">
+
+  <p class="pachino-ramka2">
+    „Noktal nije čudo. Noktal je 15 godina mojih grešaka, pokušaja, razgovora sa baka-Anom, baka-Milom, baka-Vukom i još stotinama žena koje su sjedjele u mojoj stolici. To je njihov rad — ja sam samo zapisala.“ — Milica Vuković
+  </p>
+
+  <p>
+    Najveća prednost Noktala je u tome što ne samo da uništava gljivicu — već istovremeno „budi“ tkivo nokatne ploče i podstiče ga da se ponovo formira pravilno. Zato je on jednako efikasan i kod žene od 50, i kod žene od 80.
+  </p>
+
+  <h2>
+    4 mehanizma djelovanja Noktala — kako sam ih projektovala<br>
+    <span>Tačno onim redom kojim stopalo prolazi kroz oporavak</span>
+  </h2>
+
+  <div class="obertk512">
+    <h1>4 koraka koje pratim sa svakom klijenticom:</h1>
+    <div class="block-offer-actions-block">
+      <ol>
+        <li>
+          <font>1. Smirivanje — od prvih dana</font>
+          <span>Svrab, pečenje, zadebljanje i miris povlače se već u prvih nekoliko dana. Aktivne supstance lokalno smiruju kožu i podržavaju njenu prirodnu zaštitu.</span>
+        </li>
+        <li>
+          <font>2. Zaustavljanje razaranja nokta</font>
+          <span>Nakon 2–5 dana redovnog nanošenja, struktura nokatne ploče prestaje da slabi. Tkivo dobija vlažnost i elastičnost koju izgubilo je sa godinama.</span>
+        </li>
+        <li>
+          <font>3. Buđenje regenerativnih ćelija</font>
+          <span>Ovo je faza koju najviše volim. Nokat počinje da raste iz korijena pravilno, glatko, zdravije. To je trenutak kada moje klijentice prvi put posle godina kažu: „Milice, izgleda kao da je moj!“</span>
+        </li>
+        <li>
+          <font>4. Dugotrajna zaštita</font>
+          <span>Posle 30 dana redovne upotrebe, tkivo dobija stabilnu zaštitu. Gljivica se ne vraća lako, čak ni kod dugog nošenja zatvorenih cipela ili posjete bazenu i banji.</span>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <p>
+    Svaki od ovih efekata posljedica je godina mog rada u kabinetu i pažljivog usaglašavanja sa farmaceutskim timom. Ovo nije „brzo rješenje“ — ovo je metoda koja ostaje sa vama godinama.
+  </p>
+
+  <h2>
+    Šta pokazuju moja vlastita zapažanja i nezavisno ispitivanje<br>
+    <span>Praćeno 1980 žena u dobi od 40 do 80 godina, u saradnji sa medicinskim centrom u Podgorici</span>
+  </h2>
+
+  <div class="table-block">
+    <h1>Rezultati sa Noktalom u grupi od 1980 žena (40–80 godina)</h1>
+    <table class="table"><tbody>
+      <tr><td class="one">Nestanak svraba, pečenja i mirisa stopala</td><td class="two">100%</td></tr>
+      <tr><td class="one">Potpuno nestajanje žutila i zadebljanja noktiju</td><td class="two">93,4%</td></tr>
+      <tr><td class="one">Površinska gljivica na stopalima</td><td class="two">97,0%</td></tr>
+      <tr><td class="one">Onihomikoza (smanjenje i nestajanje)</td><td class="two">98,9%</td></tr>
+      <tr><td class="one">Hronična gljivična infekcija</td><td class="two">97,6%</td></tr>
+      <tr><td class="one">Duboka gljivica nokatne ploče</td><td class="two">84,4%</td></tr>
+      <tr><td class="one">Gljivični čirevi i rane</td><td class="two">94,3%</td></tr>
+      <tr><td class="one">Promjena boje i zadebljanje kože</td><td class="two">96,9%</td></tr>
+      <tr><td class="one">Noćni svrab između prstiju</td><td class="two">93,0%</td></tr>
+      <tr><td class="one">Potpuna obnova nokatne ploče</td><td class="two">99,4%</td></tr>
+    </tbody></table>
+  </div>
+
+  <h2>
+    Priča gospođe Jovanke, 71 godina, iz Cetinja<br>
+    <span>Sedam godina je nosila zatvorenu obuću usred ljeta. Da niko ne vidi.</span>
+  </h2>
+
+  <p>
+    Gospođa Jovanka je u moj kabinet ušla u avgustu 2024. Spoljna temperatura je bila 36°C. Imala je zatvorene patike i debele čarape. Sjela je u stolicu, dugo me gledala i konačno rekla: „Dijete, ja sedam godina nisam izula obuću ni pred sopstvenim mužem. Pomozi mi.“
+  </p>
+
+  <div class="gray-bg rev-block">
+    <img class="img-card2" src="images/da896c23e368_8b55fd4e.png" alt="Jovanka">
+    <p>
+      „Sve je počelo sa žutilom palca, davno. Mislila sam — proći će. Kupovala sam svaku mast koja je u apoteci postojala. Trošila sam pola penzije na to. Stopalo je bivalo sve gore. Sram me je bilo i ljekara da pitam — žena moga doba sa takvim stopalom. Prestala sam ići u banju, prestala sam na svadbe, prestala sam i da spavam u istoj sobi sa mužem, jer me je bilo sram zbog mirisa.“
+    </p>
+    <p>
+      <b>„Kada mi je komšinica spomenula Milicu, prvo nisam htjela. Mislila sam — još jedna prevara. Ali komšinica je insistirala. Pristala sam. Milica me je primila kao kćerku. Nije me osuđivala, nije se mrštila. Rekla mi je: ‘Tetka Jovanka, ovo ćemo riješiti za 2–3 mjeseca. Samo me slušajte.‘ I dala mi Noktal.“</b>
+    </p>
+    <p>
+      „Za 12 dana sam prestala da osjećam svrab. Za mjesec — miris je nestao. Za tri mjeseca — prvi put posle sedam godina sam stavila japanke. Mužu sam pokazala stopala. On me je zagrlio i zaplakao. Nismo bili dirnuti ovako od svadbe.“
+    </p>
+    <font>— Jovanka P., 71 godina, Cetinje</font>
+  </div>
+
+  <p>
+    Druga priča je gospođe Branke, 49 godina, iz Nikšića. Radila je 20 godina u tekstilnoj fabrici, stajala u istim cipelama po 9 sati. U 44. godini joj se pojavila uznapredovala gljivica. U Nikšiću joj je ljekar rekao da je u <i>„graničnom stanju“</i> i da, ako se ne pokrene odmah, može doći u situaciju u kojoj će morati da razmišlja o ozbiljnijoj intervenciji.
+  </p>
+
+  <p>
+    <b>Branka je probala Noktal. Nakon 3 sedmice — svrab nestao. Nakon 2 mjeseca — stopala obnovljena. <span class="red-txt">Vratila se na posao, normalno hoda, normalno spava.</span></b>
+  </p>
+
+  <div class="gray-bg rev-block">
+    <img class="img-card2" src="images/3a273fb77beb_32a03ccf.jpg" alt="Branka">
+    <p>
+      „Hvala što me pitate. Ako moja priča pomogne nekoj ženi — nije mi teško da govorim. Sve je počelo sa malim žutilom prije tri godine. Mislila sam: imam 44, nisam u tom dobu — kakva sad gljivica. Bila sam glupa. Za godinu i po — stopala kao da nisu moja.“
+    </p>
+    <p>
+      <b>„Najgore mi je bilo kad je unuka — imala je 4 godine — rekla: ‘Bako, smrdiš.‘ Rekla je to nevinim glasom, kao dijete. Ja sam otišla u kupatilo i plakala dva sata. Tu sam shvatila — moram nešto. Bilo šta. Suprug je našao Milicu na internetu.“</b>
+    </p>
+    <p>
+      „Sa Milicom sam radila po njenom programu, kod kuće. Noktal sam mazala svako veče. Treći dan — svrab popušta. Druga sedmica — miris ide. Šesta sedmica — moja unuka me prvi put pita: ‘Bako, mogu li ti sjesti u krilo?‘ Tada sam znala — gotovo je.“
+    </p>
+    <font>— Branka M., 49 godina, Nikšić</font>
+  </div>
+
+  <h2>
+    Koliko traje terapija sa Noktalom?
+  </h2>
+
+  <p><b>Milica Vuković:</b></p>
+
+  <p>
+    — Najkraći program koji preporučujem traje 30 dana. U srednje ozbiljnim slučajevima — 60 dana. Kod žena starijih od 70 ili sa zapuštenom dubokom infekcijom — do 90 dana. U svim slučajevima posmatram potpuno obnovljen nokat, bez obzira na godine.
+  </p>
+
+  <p>
+    Pored toga, Noktal već od prvih dana smiruje svrab i miris. Pomaže u sprječavanju ponovnog javljanja gljivice, ubrzava zarastanje sitnih ranica, <b class="red-txt">a najvažnije — vraća ženi pravo da pogleda u svoja stopala bez stida.</b>
+  </p>
+
+  <p style="text-align:center"><b>Zahvaljujući Noktalu, u Crnoj Gori se preko 17.000 žena oslobodilo gljivice i onihomikoze. Evo nekih od mojih klijentica:</b></p>
+
+  <figure>
+    <img class="img-card" src="https://static.joxi.pro/1776416715032-c935f58b-1532-434a-a74a-368792f6c337.jpg">
+    <figcaption>Klijentica, 62 godine. Uznapredovala gljivica. Potpuna obnova nokta za 90 dana.</figcaption>
+  </figure>
+
+  <figure>
+    <img class="img-card" src="https://static.joxi.pro/1776416715031-dd515862-d130-49ae-81a2-890c3ebc77a6.jpg">
+    <figcaption>Klijentica, 44 godine. Izraženo žutilo. Potpuna regeneracija za 2,5 mjeseca.</figcaption>
+  </figure>
+
+  <figure>
+    <img class="img-card" src="https://static.joxi.pro/1776416715032-1a9f1cff-15e1-4762-956c-3fe0e62832b5.jpg">
+    <figcaption>Klijent — sin moje klijentice (37 godina). Potpuno nestajanje gljivice za 1,5 mjesec.</figcaption>
+  </figure>
+
+  <figure>
+    <img class="img-card" src="https://static.joxi.pro/1776416715031-dbfa5cac-dbcf-408e-b219-c0e6672da213.jpg">
+    <figcaption>Klijentica, 69 godina. Duboka gljivica, jak svrab. Potpuna obnova noktiju i kože za 2,5 mjeseca.</figcaption>
+  </figure>
+
+  <h2>
+    Zašto Noktala nema u apotekama? I zašto je teško doći do njega?
+  </h2>
+
+  <p>
+    Iskreno — zato što ja, Milica Vuković, nisam htjela da ga predam velikim apotekarskim lancima. Kada sam završila formulu, došli su mi sa „rado bismo to prodavali, ali sa našom maržom“. To znači — proizvod koji ja prodajem za 39 eura, bio bi u apoteci 90–110 eura. To je za moje klijentice — penzionerke, učiteljice, domaćice — nedostupno.
+  </p>
+
+  <p>
+    Zato sam odlučila da Noktal idem direktno, kroz program podrške. Dva puta godišnje šaljemo ograničenu seriju. Žene iz Crne Gore koje učestvuju u programu dobijaju <font class="red-txt">popust do 50%</font>. Tako mogu da pomognem najviše onima kojima je najpotrebnije.
+  </p>
+
+  <p>
+    Ja ne mogu da napravim beskonačno mnogo. Trenutno smo rezervisali samo 20.000 tuba za ovu godinu, i one se brzo troše.
+  </p>
+
+  <p class="red-txt"><b>Za narudžbu koristite zvanični obrazac dolje na stranici.</b></p>
+
+  <h2>
+    Poslednja prilika ove godine — iskoristite trenutak<br>
+    <span>Sledeći krug programa podrške je tek u jesen</span>
+  </h2>
+
+  <img src="https://static.joxi.pro/1774255530503-6dee4c56-8880-4ae3-a31c-17c363c8c454.jpg" style="max-width:500px;margin:18px auto" alt="Noktal pakovanje">
+
+  <p><b>Milica Vuković:</b></p>
+
+  <p>
+    — Ove godine smo obezbijedili 20.000 tuba isključivo za čitateljke ovog portala. Ali to je vrlo malo u odnosu na realnu potrebu. Molim vas — ne odlažite. Sljedeći program počinje tek krajem godine. Po pravilima, svaka građanka Crne Gore iznad 40 godina može dobiti <font class="red-txt">popust do 50%</font>, ali program se zatvara <span id="prog-end-date"></span>. Posle toga — ne mogu obećati ništa.
+  </p>
+
+  <p>
+    Stopala vam šalju signale. Ako ih sad poslušate — biće vam zahvalna do kraja života. Ja sam ovdje da pomognem. Za učešće u programu dovoljno je da unesete ime i broj telefona u obrazac. Moja saradnica će vas pozvati, dogovoriti program koji je najbolji za vašu situaciju i organizovati dostavu u bilo koji grad Crne Gore za 2–3 dana — direktno na vašu adresu, poštom ili kurirom.
+  </p>
+
+  <p>
+    <b>Svima vam želim mnogo zdravlja. I lijepa, lagana stopala.<br>Sa puno topline — Milica Vuković, podologinja</b>
+  </p>
+
+  <p class="pachino-ramka">
+    <span class="ramka-title">Ažuriranje: <span id="upd-date"></span></span>
+    Zbog velikog interesovanja za Noktal, raspoložive zalihe se mogu iscrpiti i prije roka. Današnji dan, <span id="last-day-date"></span>, posljednji je dan programa — ili dok zalihe traju.
+  </p>
+
+  <p style="text-align:center"><img src="1337.png" style="max-width:300px" alt=""></p>
+
+  <p class="noclose-cta red-txt">Pažnja! Nemojte zatvarati niti osvježavati stranicu — vaše mjesto je rezervisano.</p>
+  <span class="pre-cta">Broj <span class="number-me">19&nbsp;974</span> / 20 000</span>
+
+  <span id="form"></span>
+  <span id="oneform"></span>
+
+  <div class="pachinoform">
+    <div class="pachinoform_title">
+      <div class="pachinoform_title_logo">N</div>
+      <div class="pachinoform_title_text">
+        Zvanični obrazac za narudžbu<br>
+        № <span class="number-me">19&nbsp;974</span> / 20 000
+      </div>
+    </div>
+    <div class="pachinoform_order">
+      Da biste iskoristili <b>popust od 50%</b>, unesite ime i broj telefona i pritisnite „NARUČI“.
+    </div>
+    <div class="pachinoform_value">
+      Na zalihama:
+      <span class="pachinoform_value_current">33</span>
+      <span>/ 1000</span>
+    </div>
+    <div class="pachinoform_price">
+      <span class="price_old">78 eur.</span>
+      <span class="price_main">39 eur.</span>
+    </div>
+    <form action="/order.php" method="post">
+      <input type="hidden" name="fbpx" value="{fbpx}">
+      <input type="hidden" name="utm_code" value="{subid}">
+      <input type="hidden" name="cid" value="{campaign_id}">
+      <input type="hidden" name="sid" value="1882">
+      <input type="hidden" name="hash" value="{hash}">
+      <input type="hidden" name="country" value="ME">
+      <label for="name-input">Vaše ime</label>
+      <input id="name-input" name="name" type="text" placeholder="Npr. Milica" autocomplete="name" required>
+      <label for="phone-input">Vaš broj telefona</label>
+      <input id="phone-input" name="phone" type="tel" placeholder="Npr. 067 123 456" maxlength="20" pattern="^[\-+() 0-9]{8,20}$" autocomplete="tel" required>
+      <button class="button-submit" type="submit">NARUČI SA POPUSTOM 50%</button>
+    </form>
+    <div class="pachinoform_footer">
+      ✔ Dostava širom Crne Gore za 2–3 dana<br>
+      ✔ Plaćanje pouzećem — kuriru pri preuzimanju
+    </div>
+  </div>
+
+  <div class="comments">
+    <div class="comments__header">
+      <p class="comments__header-title">KOMENTARI ČITATELJKI:</p>
+    </div>
+    <div class="comments__item-list" id="comments-list"></div>
+  </div>
+
+</main>
+
+<script>
+/* ============================================================
+   DATES — динамические даты для шапки/программы/ажурирања
+   ============================================================ */
+(function(){
+  var months = ["januar","februar","mart","april","maj","jun","jul","avgust","septembar","oktobar","novembar","decembar"];
+  function fmt(d){
+    return d.getDate() + ". " + months[d.getMonth()] + " " + d.getFullYear() + ".";
+  }
+  function fmtShort(d){
+    var dd = String(d.getDate()).padStart(2,"0");
+    var mm = String(d.getMonth()+1).padStart(2,"0");
+    return dd + "." + mm + "." + d.getFullYear() + ".";
+  }
+  function addDays(n){
+    var d = new Date(); d.setDate(d.getDate()+n); return d;
+  }
+  document.getElementById("header-date").textContent = fmt(new Date());
+  document.getElementById("pub-date").textContent    = fmt(addDays(-3));
+  document.getElementById("upd-date").textContent    = fmt(addDays(-1));
+  document.getElementById("last-day-date").textContent = fmt(new Date());
+  document.getElementById("prog-end-date").textContent = fmt(addDays(1));
+
+  /* ============================================================
+     COMMENTS — рандомные даты в окне 2–3 дня от сегодня
+     ============================================================ */
+  var comments = [
+    {name:"Milica Kovačević", ava:"images/7da17fc86c6c_2f1260d0.jpg",
+     text:"Hvala vam Milice na ovoj priči! Toliko mi liči na moju mamu… I ona se godinama stidjela, krila stopala. Naručujem joj odmah. Bog vas blagoslovio na ovome što radite za nas žene."},
+    {name:"Jelena Stefanović", ava:"images/8ba73d45c164_4ede289a.jpg",
+     text:"Paket stigao prošlog ponedjeljka. Posle jedne sedmice — žutilo se primjetno povuklo, miris je nestao. Idem do kraja, 60 dana. Već se osjećam mlađe. Vratiću se u šetnju sa unukom u park."},
+    {name:"Marija Vuković", ava:"images/fa7f61c1431c_7946ff6c.jpg",
+     text:"Imam 69 godina, sa gljivicom se mučim već 4 godine. Apotekari su me prebacivali sa kreme na kremu — ništa. Pošto je Milica iz Podgorice, kao i ja, vjerovala sam joj. Nakon 2 mjeseca Noktala — nokti se obnavljaju, svrab nema, hodam normalno. Hvala vam puno!"},
+    {name:"Nikola Bjelica", ava:"images/dcc5cfe80d60_5aa7f8f7.jpg",
+     text:"Pišem u ime majke. Sedam godina ništa nije pomagalo. Probala je Noktal — za mjesec i po stopala su joj kao nova. I prvi put se sa mnom slikala na moru. To je za mene nemoguće reći riječima."},
+    {name:"Stefan Radović", ava:"images/bcbe20e0b5d2_b241da99.jpg",
+     text:"Milica je u pravu — bolje prirodni sastojci nego sve te hemikalije. Moja žena koristi Noktal mjesec dana, rezultat odličan."},
+    {name:"Albina Šćepanović", ava:"images/73d3a879cef9_4a9ce85c.jpg",
+     text:"Još razmišljam… ljekar mi predlaže drastičnije rješenje. Da li neko ima iskustvo u sličnoj fazi?"},
+    {name:"Ivana Stefanović", ava:"images/71deaf909b4e_ea30d07c.jpg", reply:true,
+     text:"Albina, ja sam imala identičnu situaciju. Probala sam Noktal — komšinica mi rekla za njega. Posle mjesec dana razlika neuporediva. Probaj, nemaš šta da izgubiš sa garancijom."},
+    {name:"Marko Mladenović", ava:"images/66ebad51123a_206d5fba.png", reply:true,
+     text:"Albina, naručuj bez razmišljanja. I ja sam bio na ivici da idem na intervenciju. Noktal me je doslovno spasio od toga. 2,5 mjeseca i problema nema."},
+    {name:"Snežana Mihailović", ava:"images/d61700bc0961_28c03d39.jpg",
+     text:"Koristim 10 dana — već se osjećam bolje, manje me svrbi noću. Idem do kraja program 60 dana, vjerujem Milici."},
+    {name:"Ljiljana Čavoški", ava:"images/fd9eb915b838_59aa235e.jpg",
+     text:"Probala sam svaku mast iz apoteke. Ništa. Noktal je za mjesec i po vratio mi nokte. Najviše me dirnulo to što me Milica nije osuđivala — kao da razgovaraš sa sestrom."},
+    {name:"Nevena Ivanović", ava:"images/7db2eed8e880_6ecfd92a.jpg",
+     text:"Imam 68, opet idem na jogu i ne stidim se da skinem čarape u svlačionici! Hvala Milice draga, hvala iz dna srca."},
+    {name:"Silvija Dimović", ava:"images/daeecf66dcf6_e1c9bf1a.jpg",
+     text:"Najgore je bilo to što sam mislila da sam ‘jedina takva’. A onda sam pročitala ovaj članak i shvatila — hiljade nas! Naručila, dobila za 2 dana. Već 3 dana mažem — svrab popušta."},
+    {name:"Hristo Atanasović", ava:"images/a49c7ec0724d_6f186c1c.jpg",
+     text:"Pišem za suprugu, ima 76. Probali smo Noktal po preporuci komšije. Nakon 5 sedmica — stopala se ne prepoznaju. Ona se smije kao da ima 50."},
+    {name:"Dimitrije Vuković", ava:"images/14fcabaa91a3_d3871213.jpg",
+     text:"Razumijem sve koje se bore sa ovim. I ja sam, kao muškarac, dugo skrivao. Noktal pomogao za 2 mjeseca. Žene se najviše stide — preporučite ovo majkama i baba!"},
+    {name:"Saša Knežević", ava:"images/c364fa7fabf3_734a4c7f.jpg",
+     text:"Naručio sam za ćerku (44 godine). Ljekar joj je rekao da je u graničnom stanju. Probali Noktal — 2,5 mjeseca, nokti čisti. Nevjerovatno!"},
+    {name:"Filip Stanković", ava:"images/7099c502f996_b89c4cc9.jpg",
+     text:"Moja supruga je 2 godine bila zatvorena u kući, stidjela se da izađe. Noktal joj je vratio osmijeh. Prvi put posle dugo vremena je sama otišla u baštu. Hvala Milici beskrajno!"},
+    {name:"Anja Pavlović", ava:"images/658f969bb746_3d8e16cd.jpg",
+     text:"Stigao paket juče. Već 3 dana — žutilo blijedi! Radoznala sam za pun ciklus. Ovo je pravi poklon ženama 50+."},
+    {name:"Janja Stojović", ava:"images/b35ad35f2989_d19c0bad.jpg",
+     text:"Imam 71. Probala desetine ljekova prije Noktala — ništa. Sa Noktalom za mjesec i po — gotovo. Ljekar gleda u nalaze i ne vjeruje. Tako i ja."},
+    {name:"Emilija Bulajić", ava:"images/5293353f6d37_ac335d19.jpg",
+     text:"Znam Milicu lično, bila sam joj klijentica još 2017. Žena zlatnog srca. Sve što kaže — istina je."},
+    {name:"Anđela Franović", ava:"images/df3e8c2eb745_86a29b61.jpg",
+     text:"Moja majka je plakala noću od svraba i bola. Niko nije mogao da pomogne. Komšinica je spomenula Noktal — naručili odmah. Posle nedjelje — majka opet pjeva u kuhinji! Hvala Milici, vratila nam je majku."},
+    {name:"Luka Jovanović", ava:"images/9e5c0e0e0ef7_57accffe.jpg",
+     text:"Anđela, posle tvog komentara naručujem za moju mamu. Hvala što si pisala iskreno."},
+    {name:"Svetlana Obradović", ava:"images/95700a967e85_c7b9fe05.jpg",
+     text:"Pitanje za sve koji su koristili — da li je iko imao alergijsku reakciju? Ja sam osjetljive kože."},
+    {name:"Aleksandar Balabanović", ava:"images/d653e647ce29_c22febb7.jpg", reply:true,
+     text:"Svetlana, ja sam i alergičan na pola ljekova — Noktal sam koristio 2 mjeseca bez ikakve reakcije. Prirodni sastojci. Mom rezultatu se ljekar čudi."},
+    {name:"Cvijeta Begović", ava:"images/71bb14a12f9e_280a6001.jpg",
+     text:"Bila sam prikovana za kauč. Ćerka naručila Noktal pre 3 mjeseca. Završila ciklus. Sada plešem sa unukama na rođendanima. Preporučujem svima!"},
+    {name:"Krsto Pejović", ava:"images/2d72d731d826_3ff382cb.jpg",
+     text:"Naručio za oca. Imao gljivicu i lošu cirkulaciju, bolovi noću užasni. Posle Noktala — miran, smije se kao nekad. Velika promjena za sve nas."},
+    {name:"Antonija Mušanović", ava:"images/7536079073c5_564ff00a.jpg", reply:true,
+     text:"Krsto, hvala što dijeliš! I moj otac ima slične probleme. Naručujem danas."},
+    {name:"Danijela Fazlić", ava:"images/1dcbfabe6827_57a19553.jpg",
+     text:"Zašto u apotekama ne pričaju o ovome?! Toliko žena pati nepotrebno!"},
+    {name:"Anđelko Fazlić", ava:"images/ffd79a237d84_8971c06a.jpg", reply:true,
+     text:"Zato što apotekama nije u interesu da se izliječimo. Mi smo im klijenti zauvijek dok god mažemo njihove krpice. Milica zato i prodaje sama, mimo apoteka."},
+    {name:"Lidija Bajramović", ava:"images/47a8cb9cf088_09555b8e.jpg",
+     text:"Komentari su me dirnuli. Naručila 4 tube za mamu odmah. Vjerujem Milici, ima toplinu kao da nam je rodbina."},
+    {name:"Teodora Ribarović", ava:"images/f021e0a36f8b_7c282874.jpg",
+     text:"Dobila Noktal za 2 dana, popust 50% — ne mogu da vjerujem da to još postoji. Hvala!"},
+    {name:"Uršula Pavlović", ava:"images/a29369d9b077_c326beba.jpg",
+     text:"Ljekari su mi rekli „takve su godine“. A Milica kaže — nije istina, nokti se obnavljaju u svakom dobu. Vjerujem joj više. Naručujem!"},
+    {name:"Natalija Dončević", ava:"images/3a80730702e4_15a7bfcf.jpg",
+     text:"Dostava brza, u Bar za 2 dana. Već mažem 5 dana, vidim razliku. Žene, ne stidite se — naručite!"},
+    {name:"Franko Hećimović", ava:"images/d770c7a4cbdf_467ee117.jpg",
+     text:"Tražio Noktal u apoteci — rekli da ga nema, da se naručuje samo ovdje. Sad mi je jasno zašto."}
+  ];
+
+  /* раскидываем даты — окно [сегодня-3, сегодня], случайный сдвиг по часам */
+  function commentDate(i, total){
+    var span = 3; // дни
+    var daysOffset = (i / total) * span;       // от 0 до 3
+    var d = new Date();
+    d.setDate(d.getDate() - daysOffset);
+    /* добавляем псевдо-рандомное время в пределах того же дня */
+    var hour = 8 + ((i * 7) % 12);             // 8..19
+    var minute = (i * 13) % 60;
+    d.setHours(hour, minute, 0, 0);
+    return d;
+  }
+  function fmtComment(d){
+    var dd = String(d.getDate()).padStart(2,"0");
+    var mm = String(d.getMonth()+1).padStart(2,"0");
+    var hh = String(d.getHours()).padStart(2,"0");
+    var mi = String(d.getMinutes()).padStart(2,"0");
+    return dd + "." + mm + "." + d.getFullYear() + ". " + hh + ":" + mi;
+  }
+
+  var list = document.getElementById("comments-list");
+  comments.forEach(function(c, idx){
+    var d = commentDate(idx, comments.length);
+    var div = document.createElement("div");
+    div.className = "comments__item" + (c.reply ? " reply" : "");
+    div.innerHTML =
+      '<div class="comments__item-header">' +
+        '<img class="comments__item-avatar" src="'+c.ava+'" alt="" onerror="this.style.background=\'#e1d8bf\'">' +
+        '<div class="comments__item-info">' +
+          '<p class="comments__item-name">'+c.name+'</p>' +
+          '<p class="comm-date">'+fmtComment(d)+'</p>' +
+        '</div>' +
+      '</div>' +
+      '<p class="comments__item-content">'+c.text+'</p>';
+    list.appendChild(div);
+  });
+})();
+
+/* плавный скролл к форме */
+$("a").on("touchend click", function(e){
+  if(this.getAttribute("href") === "#"){
+    e.preventDefault();
+    $("html,body").animate({scrollTop: $("#oneform").offset().top}, 400);
+  }
+});
+
+/* валидация полей формы */
+$('[name="name"]').on("input", function(){
+  var v = $(this).val().replace(/[^a-zA-Zа-яА-ЯёЁčćžšđČĆŽŠĐії ]/g,"").replace(/^\s+/,"").replace(/\s\s+/," ");
+  var p = v.split(" "); if(p.length>2) v = p[0]+" "+p[1];
+  $(this).val(v);
+});
+$('[name="name"]').on("change blur", function(){ $(this).val($(this).val().trim()); });
+$('[name="phone"]').on("input change", function(){
+  $(this).val($(this).val().replace(/\D/g,""));
+});
+</script>
+
+<p style="opacity:0">{_box}</p>
+</body>
+</html>
