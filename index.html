@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Barbara Kowalska, 62 lata: „Po 2 miesiącach moje żyły są jak nowe". Historia, która porusza całą Polskę</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="images/product.png?=v1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<script src="js/dtime.js"></script>
+
+<style>
+/* =========================================================
+   ВИЗУАЛЬНАЯ КОНЦЕПЦИЯ: МЕДИЦИНСКИЙ ЖУРНАЛ / ГАЗЕТА
+   Стиль авторитетного польского медицинского портала.
+   Палитра: кремовая бумага, тёмно-синий, бордовый акцент.
+   Шрифт: Lora (serif) для заголовков, Source Sans для текста.
+   Крупные размеры + высокий line-height для аудитории 45+.
+   ========================================================= */
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+    background: #f3ede0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)),
+        radial-gradient(ellipse at top, #f5efe2 0%, #ebe3d2 100%);
+    font-family: "Source Sans 3", "Segoe UI", Roboto, Arial, sans-serif;
+    color: #1f2937;
+    font-size: 19px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: #2c5282; text-decoration: underline; }
+
+.paper {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fdfaf1;
+    box-shadow: 0 0 0 1px rgba(60,40,20,0.08), 0 20px 60px rgba(40,30,15,0.12);
+    border-top: 6px solid #1a3a5c;
+}
+
+/* === ШАПКА: «название издания» === */
+.masthead {
+    border-bottom: 3px double #1a3a5c;
+    padding: 18px 28px 14px;
+    text-align: center;
+    background: #fdfaf1;
+}
+.masthead-brand {
+    font-family: "Lora", Georgia, serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #1a3a5c;
+    margin: 0;
+}
+.masthead-sub {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #6b5a3e;
+    margin-top: 4px;
+}
+.masthead-meta {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 13px;
+    color: #5a4a30;
+    margin-top: 10px;
+    border-top: 1px solid #d9cfb8;
+    padding-top: 8px;
+    font-style: italic;
+}
+
+/* === ОСНОВНОЙ КОНТЕНТ === */
+.article {
+    padding: 30px 32px 40px;
+}
+
+.tag-rubric {
+    display: inline-block;
+    background: #b8252d;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    margin-bottom: 16px;
+}
+
+h1.headline {
+    font-family: "Lora", Georgia, serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    color: #14233a;
+    margin: 0 0 16px;
+    letter-spacing: -0.3px;
+}
+.deck {
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 1.5;
+    color: #3a4a5c;
+    margin: 0 0 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d9cfb8;
+}
+
+.byline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: #5a4a30;
+    margin-bottom: 28px;
+}
+.byline-dot { width: 6px; height: 6px; border-radius: 50%; background: #b8252d; }
+.byline b { color: #1a3a5c; }
+
+.article p {
+    margin: 0 0 18px;
+    font-size: 19px;
+    line-height: 1.7;
+}
+.article p:first-of-type::first-letter {
+    font-family: "Lora", Georgia, serif;
+    float: left;
+    font-size: 64px;
+    line-height: 0.9;
+    font-weight: 700;
+    color: #b8252d;
+    padding: 4px 10px 0 0;
+}
+
+.article h2 {
+    font-family: "Lora", Georgia, serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.3;
+    color: #14233a;
+    margin: 36px 0 14px;
+    padding-top: 24px;
+    border-top: 2px solid #1a3a5c;
+}
+.article h2 .sub {
+    display: block;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 19px;
+    color: #5a4a30;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+.article h3 {
+    font-family: "Lora", Georgia, serif;
+    font-weight: 600;
+    font-size: 21px;
+    color: #14233a;
+    margin: 28px 0 12px;
+}
+
+/* === ЦИТАТЫ И ВРЕЗКИ === */
+.pullquote {
+    margin: 24px 0;
+    padding: 20px 24px;
+    border-left: 5px solid #b8252d;
+    background: #f9f3e3;
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #14233a;
+}
+.pullquote-author {
+    display: block;
+    margin-top: 12px;
+    font-style: normal;
+    font-size: 15px;
+    color: #6b5a3e;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.doctor-card {
+    margin: 28px 0;
+    padding: 22px 24px;
+    background: #fff;
+    border: 1px solid #d9cfb8;
+    border-left: 5px solid #1a3a5c;
+    box-shadow: 0 4px 14px rgba(40,30,15,0.06);
+}
+.doctor-card-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5dcc4;
+}
+.doctor-card-head img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1a3a5c;
+}
+.doctor-card-head .name {
+    font-family: "Lora", Georgia, serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1a3a5c;
+}
+.doctor-card-head .title {
+    font-size: 14px;
+    color: #6b5a3e;
+    font-style: italic;
+}
+.doctor-card p { margin: 0 0 10px; font-size: 18px; line-height: 1.65; }
+.doctor-card p:last-child { margin-bottom: 0; }
+
+.warning-box {
+    margin: 24px 0;
+    padding: 18px 22px;
+    border: 2px solid #b8252d;
+    background: #fdf3f3;
+    border-radius: 4px;
+    color: #7a1820;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.55;
+}
+.warning-box::before {
+    content: "⚠";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 22px;
+    color: #b8252d;
+}
+
+.fact-box {
+    margin: 24px 0;
+    padding: 18px 22px;
+    background: #ecf3ec;
+    border-left: 5px solid #2d7a3e;
+    border-radius: 0 4px 4px 0;
+    color: #1d4d2a;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* === ИЗОБРАЖЕНИЯ === */
+.figure {
+    margin: 28px 0;
+    background: #fff;
+    border: 1px solid #d9cfb8;
+    padding: 8px;
+    box-shadow: 0 4px 14px rgba(40,30,15,0.08);
+}
+.figure img {
+    width: 100%;
+    display: block;
+}
+.figure figcaption {
+    padding: 12px 14px 6px;
+    font-size: 15px;
+    line-height: 1.45;
+    color: #4a3c24;
+    font-style: italic;
+    border-top: 1px solid #ebe3d2;
+    margin-top: 6px;
+}
+.figure figcaption b { color: #14233a; font-style: normal; }
+
+.figure-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 24px 0;
+}
+.figure-row .figure { margin: 0; }
+@media (max-width: 540px) {
+    .figure-row { grid-template-columns: 1fr; }
+}
+
+/* === СПИСОК СИМПТОМОВ === */
+.symptoms {
+    background: #fff;
+    border: 1px solid #d9cfb8;
+    border-radius: 4px;
+    padding: 20px 26px 12px;
+    margin: 22px 0;
+}
+.symptoms ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 2;
+    column-gap: 28px;
+}
+@media (max-width: 540px) { .symptoms ul { columns: 1; } }
+.symptoms li {
+    position: relative;
+    padding: 6px 0 6px 24px;
+    font-size: 17px;
+    line-height: 1.4;
+    border-bottom: 1px dashed #ebe3d2;
+    break-inside: avoid;
+}
+.symptoms li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    color: #b8252d;
+    font-weight: 700;
+}
+
+/* === РЕЦЕПТУРА === */
+.recipe {
+    background: #fdf6e3;
+    border: 1px solid #c9b88a;
+    border-radius: 4px;
+    padding: 24px 26px;
+    margin: 28px 0;
+    position: relative;
+}
+.recipe::before {
+    content: "RP.";
+    position: absolute;
+    top: -14px;
+    left: 22px;
+    background: #1a3a5c;
+    color: #fdf6e3;
+    padding: 4px 12px;
+    font-family: "Lora", Georgia, serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.recipe-title {
+    font-family: "Lora", Georgia, serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #14233a;
+    margin: 0 0 14px;
+}
+.recipe ul { list-style: none; padding: 0; margin: 0; }
+.recipe li {
+    padding: 10px 0;
+    border-bottom: 1px dotted #c9b88a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 14px;
+    font-size: 17px;
+}
+.recipe li:last-child { border-bottom: none; }
+.recipe li b {
+    font-family: "Lora", Georgia, serif;
+    color: #14233a;
+    font-size: 18px;
+}
+.recipe li .src {
+    color: #6b5a3e;
+    font-style: italic;
+    font-size: 15px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+/* === МЕХАНИЗМЫ ДЕЙСТВИЯ === */
+.mechanisms {
+    margin: 28px 0;
+    border: 1px solid #d9cfb8;
+    background: #fff;
+}
+.mechanisms-head {
+    background: #1a3a5c;
+    color: #fdfaf1;
+    padding: 14px 22px;
+    font-family: "Lora", Georgia, serif;
+    font-size: 19px;
+    font-weight: 700;
+}
+.mechanisms-list { padding: 18px 22px; margin: 0; counter-reset: mech; list-style: none; }
+.mechanisms-list li {
+    position: relative;
+    padding: 14px 0 14px 56px;
+    border-bottom: 1px solid #ebe3d2;
+    counter-increment: mech;
+}
+.mechanisms-list li:last-child { border-bottom: none; }
+.mechanisms-list li::before {
+    content: counter(mech);
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 40px;
+    height: 40px;
+    background: #b8252d;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lora", Georgia, serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.mechanisms-list .lead {
+    display: block;
+    font-family: "Lora", Georgia, serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #14233a;
+    margin-bottom: 6px;
+}
+.mechanisms-list .desc {
+    display: block;
+    font-size: 16px;
+    line-height: 1.55;
+    color: #4a4a4a;
+}
+
+/* === ТАБЛИЦА РЕЗУЛЬТАТОВ === */
+.results-table {
+    margin: 28px 0;
+    border: 1px solid #d9cfb8;
+    background: #fff;
+}
+.results-table-head {
+    background: #fdf6e3;
+    border-bottom: 2px solid #1a3a5c;
+    padding: 14px 20px;
+    font-family: "Lora", Georgia, serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #14233a;
+    text-align: center;
+}
+.results-table table { width: 100%; border-collapse: collapse; }
+.results-table td {
+    padding: 11px 18px;
+    font-size: 16px;
+    border-bottom: 1px solid #ebe3d2;
+}
+.results-table tr:last-child td { border-bottom: none; }
+.results-table tr:nth-child(even) td { background: #faf5e8; }
+.results-table .label { color: #2c3e50; }
+.results-table .value {
+    text-align: right;
+    font-family: "Lora", Georgia, serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: #2d7a3e;
+    white-space: nowrap;
+}
+
+/* === БЛОК ОТЗЫВА (история героя) === */
+.story-block {
+    margin: 28px 0;
+    padding: 26px 28px;
+    background: #fff7e0;
+    border: 1px solid #e0c97a;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 4px rgba(255,255,255,0.5);
+}
+.story-block-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e0c97a;
+}
+.story-block-head img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.story-block-name {
+    font-family: "Lora", Georgia, serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: #14233a;
+}
+.story-block-age {
+    font-size: 15px;
+    color: #6b5a3e;
+    font-style: italic;
+}
+.story-block p { font-size: 18px; line-height: 1.65; }
+.story-block p:last-child { margin-bottom: 0; }
+
+/* === CTA ФОРМА === */
+.cta-form {
+    margin: 36px 0;
+    background: #fff;
+    border: 3px solid #1a3a5c;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(20,35,58,0.18);
+}
+.cta-form-head {
+    background: linear-gradient(135deg, #1a3a5c 0%, #2c5282 100%);
+    color: #fff;
+    padding: 18px 24px;
+    text-align: center;
+}
+.cta-form-head h3 {
+    margin: 0;
+    font-family: "Lora", Georgia, serif;
+    font-size: 22px;
+    line-height: 1.3;
+}
+.cta-form-head .meta {
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: 0.85;
+    letter-spacing: 1px;
+}
+.cta-body { padding: 24px 28px; }
+.cta-info {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #2c3e50;
+}
+.cta-info b { color: #b8252d; }
+.cta-stock {
+    text-align: center;
+    margin: 14px 0 18px;
+    color: #1a3a5c;
+    font-weight: 600;
+    font-size: 17px;
+}
+.cta-stock strong {
+    display: inline-block;
+    background: #fdf3f3;
+    border: 2px solid #b8252d;
+    color: #b8252d;
+    padding: 4px 14px;
+    font-size: 22px;
+    margin: 0 6px;
+    border-radius: 3px;
+}
+.cta-prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    margin: 22px 0;
+}
+.price-old {
+    font-family: "Lora", Georgia, serif;
+    font-size: 28px;
+    color: #6b5a3e;
+    position: relative;
+    text-decoration: line-through;
+    text-decoration-color: #b8252d;
+    text-decoration-thickness: 3px;
+}
+.price-new {
+    background: #b8252d;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Lora", Georgia, serif;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(184,37,45,0.3);
+}
+.cta-form label {
+    display: block;
+    font-weight: 600;
+    color: #14233a;
+    margin: 12px 0 6px;
+    font-size: 16px;
+}
+.cta-form input[type="text"],
+.cta-form input[type="tel"] {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 18px;
+    font-family: inherit;
+    border: 2px solid #c9b88a;
+    border-radius: 4px;
+    background: #fdfaf1;
+    color: #14233a;
+}
+.cta-form input:focus {
+    outline: none;
+    border-color: #1a3a5c;
+    box-shadow: 0 0 0 3px rgba(26,58,92,0.15);
+}
+.cta-submit {
+    width: 100%;
+    margin-top: 18px;
+    padding: 18px;
+    background: #b8252d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.2s;
+}
+.cta-submit:hover { background: #951c23; }
+.cta-footer {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #5a4a30;
+    line-height: 1.5;
+}
+
+/* === КОММЕНТАРИИ === */
+.comments {
+    margin: 36px 0;
+    padding: 26px 28px;
+    background: #fff;
+    border: 1px solid #d9cfb8;
+    border-radius: 4px;
+}
+.comments-head {
+    font-family: "Lora", Georgia, serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #14233a;
+    margin: 0 0 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #1a3a5c;
+}
+.comment {
+    padding: 16px 0;
+    border-bottom: 1px solid #ebe3d2;
+}
+.comment:last-child { border-bottom: none; }
+.comment.reply { margin-left: 36px; background: #faf5e8; padding: 14px 18px; border-radius: 4px; border-bottom: none; margin-bottom: 8px; }
+.comment-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+.comment-avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #d9cfb8;
+}
+.comment-name {
+    font-weight: 600;
+    color: #1a3a5c;
+    font-size: 16px;
+}
+.comment-date { font-size: 13px; color: #8a7a5e; font-style: italic; }
+.comment-body { font-size: 16px; line-height: 1.6; color: #2c3e50; }
+.comment-body img { margin-top: 10px; border: 1px solid #d9cfb8; }
+
+/* === АКЦЕНТЫ === */
+.red { color: #b8252d; }
+.highlight { background: #fff3a8; padding: 2px 4px; }
+.update-box {
+    margin: 24px 0;
+    padding: 16px 20px;
+    border: 2px dashed #b8252d;
+    background: #fdf3f3;
+    border-radius: 4px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.update-box b { color: #b8252d; }
+
+.product-shot {
+    text-align: center;
+    margin: 26px 0;
+}
+.product-shot img {
+    max-width: 280px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    body { font-size: 18px; }
+    .article { padding: 22px 18px 30px; }
+    h1.headline { font-size: 26px; }
+    .deck { font-size: 18px; }
+    .article p { font-size: 18px; }
+    .article h2 { font-size: 22px; }
+    .pullquote { font-size: 19px; padding: 16px 18px; }
+    .doctor-card { padding: 18px 18px; }
+    .recipe { padding: 20px 18px; }
+    .recipe li { flex-direction: column; gap: 2px; }
+    .recipe li .src { text-align: left; }
+    .price-new { font-size: 28px; padding: 6px 14px; }
+    .price-old { font-size: 22px; }
+    .comment.reply { margin-left: 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="paper">
+
+    <!-- ========== ШАПКА «ИЗДАНИЯ» ========== -->
+    <header class="masthead">
+        <div class="masthead-brand">ZDROWIE &amp; ŻYCIE</div>
+        <div class="masthead-sub">Polski Portal Medyczny · Wydanie Specjalne</div>
+        <div class="masthead-meta">
+            <span>Rubryka: <b>Flebologia</b></span>
+            <span>Czas czytania: 7 minut</span>
+            <span>Opublikowano: <span class="startdate"><script>dtime_nums(-3, true)</script></span>, 09:36</span>
+        </div>
+    </header>
+
+    <article class="article">
+
+        <span class="tag-rubric">HISTORIA PACJENTKI</span>
+
+        <h1 class="headline">
+            „Lekarze chcieli amputować mi nogę. Po 2 miesiącach znów tańczę z wnukami" — historia Barbary Kowalskiej z Krakowa, która zmienia spojrzenie Polaków na żylaki.
+        </h1>
+
+        <p class="deck">
+            Barbara, 62 lata, przez 7 lat walczyła z ciężką niewydolnością żylną, owrzodzeniami i bólem nie do zniesienia. Gdy usłyszała wyrok o amputacji, ktoś polecił jej zwykłą domową kurację. To, co stało się potem, lekarze nazywają „cudem flebologii".
+        </p>
+
+        <div class="byline">
+            <span class="byline-dot"></span>
+            <span>Materiał przygotowała <b>Magdalena Bartosz</b> · konsultacja medyczna: <b>dr Tomasz Zaremba</b>, flebolog</span>
+        </div>
+
+        <!--
+        ИЗОБРАЖЕНИЕ 1 (главное, hero):
+        Сцена: пожилая полька 62 лет (Barbara) сидит у окна старой краковской квартиры в уютном кресле,
+        улыбается, держит чашку чая. Утренний мягкий свет, кружевная занавеска. Ноги в светлых брюках
+        видны частично — здоровые, без отёков. На столе — фотография внуков и упаковка препарата.
+        Тёплая, домашняя атмосфера, документальный стиль. Лицо доброе, морщины — но взгляд счастливый.
+        -->
+        <img src="https://static.joxi.pro/1772705364642-a0ca4a64-0b5b-4683-b945-e61d2b10f6d9.jpg" alt="Barbara Kowalska w swoim domu" style="border:1px solid #d9cfb8; margin: 20px 0;">
+
+        <p>
+            Nazywam się Barbara Kowalska, mam 62 lata i przez ostatnie siedem lat każdy poranek zaczynał się od jednego pytania: czy dziś w ogóle uda mi się wstać z łóżka. Pracowałam jako nauczycielka biologii w krakowskim liceum przez 35 lat — godziny stania przy tablicy, dyżury na przerwach, marsze z uczniami. Kiedy odchodziłam na emeryturę, marzyłam o spacerach z wnukami i ogródku działkowym. Zamiast tego dostałam diagnozę: przewlekła niewydolność żylna trzeciego stopnia.
+        </p>
+
+        <p>
+            Piszę dzisiaj te słowa, bo wciąż dostaję listy od kobiet i mężczyzn z całej Polski, którzy są w punkcie, w którym ja byłam dwa lata temu. Słyszą od lekarzy: „pani Basiu, trzeba się przyzwyczaić". Albo gorzej — „musimy panią przygotować do amputacji". Chcę im powiedzieć jedno: <b>NIE PRZYZWYCZAJAJCIE SIĘ. I NIE GODŹCIE SIĘ.</b>
+        </p>
+
+        <h2>To, co przez lata uznawaliśmy za „normalne zmęczenie", dziś okazuje się cichą katastrofą</h2>
+
+        <p>
+            Pierwsze objawy mam tlite już od pięćdziesiątki. Wieczorami nogi były ciężkie jak ołów, kostki puchły, czasem nocą budził mnie skurcz tak silny, że wgryzałam się w poduszkę, żeby nie obudzić męża. Mówiłam sobie: to wiek, to praca, to pogoda. Mój lekarz rodzinny przepisywał kolejne maści, kolejne tabletki uszczelniające naczynia. Brałam wszystko grzecznie, jak typowa Polka mojego pokolenia — zawsze ufałam medycynie.
+        </p>
+
+        <p>
+            Po pięciu latach takiej „terapii" miałam: zniszczoną wątrobę od chemii, żylaki tak grube, że wstydziłam się nosić sukienek, owrzodzenie na lewej łydce wielkości pięciozłotówki i strach, który nie pozwalał mi spać. Lekarz powiedział wprost: <span class="red">„Operacja, a potem zobaczymy. W najgorszym wypadku — amputacja poniżej kolana".</span>
+        </p>
+
+        <!--
+        ИЗОБРАЖЕНИЕ 2 (доктор):
+        Сцена: dr Tomasz Zaremba (мужчина около 55 лет, седеющий брюнет, очки в тонкой оправе) сидит
+        в современном медицинском кабинете в Кракове. Белый халат поверх рубашки и галстука. На фоне —
+        книжный шкаф с медицинскими атласами, дипломы на стене (на польском), модель ноги с венозной
+        системой на столе. Спокойное, уверенное лицо профессора. Документальный портрет, тёплый свет.
+        -->
+        <div class="doctor-card">
+            <div class="doctor-card-head">
+                <img src="https://static.joxi.pro/1773234489768-bc0de7f3-9c27-49e5-b277-5973e237b0bd.jpg" alt="dr Tomasz Zaremba">
+                <div>
+                    <div class="name">dr n. med. Tomasz Zaremba</div>
+                    <div class="title">flebolog, 28 lat praktyki klinicznej w Polsce i Niemczech</div>
+                </div>
+            </div>
+            <p>
+                — Pani Barbara nie jest wyjątkiem. To typowy obraz polskiego pacjenta po pięćdziesiątce. <b>Pacjenci latami stosują maści i tabletki, które łagodzą objawy, ale w żaden sposób nie odbudowują uszkodzonej ściany żyły.</b> Tymczasem prawda jest brutalna: po 50. roku życia kolagen w naczyniach krwionośnych traci elastyczność o 30–40%. Żyła przestaje się „domykać", krew zalega, ściana puchnie, w końcu pęka.
+            </p>
+            <p>
+                Naszym celem od lat była jedna rzecz: <b>uruchomić w organizmie naturalną zdolność do regeneracji ścian żył</b> — tę samą, którą mieliśmy w wieku 20 lat. I udało się. Mówię to z pełną odpowiedzialnością: dziś potrafimy zatrzymać niszczenie żył nawet w 98,7%, i to bez skalpela.
+            </p>
+        </div>
+
+        <h2>Pierwszy szok: maści i tabletki nie tylko nie leczą — one cichym sabotażem niszczą organizm</h2>
+
+        <p>
+            Kiedy poprosiłam dr. Zarembę o pierwszą konsultację, padło zdanie, którego nigdy nie zapomnę: „Pani Basiu, gdyby chciała pani pomóc swoim żyłom, najpierw musi pani przestać im szkodzić".
+        </p>
+
+        <div class="pullquote">
+            „Czy naprawdę uważa Pani, że maść na żylaki za 28 złotych z apteki jest w stanie odbudować ścianę naczynia, której organizm nie potrafił naprawić przez 20 lat? To nie medycyna. To biznes."
+            <span class="pullquote-author">— dr Tomasz Zaremba</span>
+        </div>
+
+        <p>
+            Wtedy zrozumiałam. Każda tabletka, którą połykałam, każdy żel, który wcierałam — to było odsuwanie problemu, nie jego rozwiązanie. Co gorsza: chemia odkładała się w wątrobie i nerkach. Badania krwi miałam coraz gorsze. Postępująca niewydolność żylna to proces, który zaczyna się niewinnie — ciężkość, wieczorne obrzęki — a kończy zakrzepicą, owrzodzeniem i martwicą tkanek. <b>Odwrócenie tych zmian staje się niemal niemożliwe, jeśli czeka się zbyt długo.</b>
+        </p>
+
+        <!--
+        ИЗОБРАЖЕНИЕ 3 (нога молодого, но больного пациента):
+        Сцена: голень мужчины около 44 лет, лежит на белой больничной простыне. На коже — выраженные
+        тёмно-фиолетовые варикозные узлы, отёк лодыжки, в нижней части начало трофической язвы.
+        Документальное медицинское фото, без излишней крови. Косой свет, серьёзная атмосфера.
+        Это «было до» — иллюстрация запущенного варикоза у относительно молодого пациента.
+        -->
+        <figure class="figure">
+            <img src="https://static.joxi.pro/1772713308728-94700574-c49e-490b-a0ef-f6b2608ba749.jpg" alt="">
+            <figcaption>
+                <b>Noga 44-letniego pacjenta dr. Zaremby.</b> Wszystko zaczęło się od zwykłej ciężkości nóg. W ciągu tygodnia rozwinęła się zakrzepica, po dwóch tygodniach — owrzodzenia, miesiąc później — martwica i amputacja. „Dziś takie zniszczenia widzimy już u czterdziestolatków" — komentuje dr Zaremba.
+            </figcaption>
+        </figure>
+
+        <div class="warning-box">
+            Ciężkość nóg i dyskomfort po 40–50. roku życia w 9 na 10 przypadków oznaczają, że ściany żył już zaczęły się rozpadać. Najgroźniejsze są żyły głębokie — ich zniszczenie postępuje nawet 3–4 razy szybciej niż żył powierzchownych, a objawy długo pozostają niewidoczne.
+        </div>
+
+        <h2>Druga lekcja: operacja nie jest „rozwiązaniem" — to często początek nowego koszmaru</h2>
+
+        <p>
+            Mój pierwszy chirurg był pewien siebie: „Wytniemy żylaki, dwa tygodnie rekonwalescencji, wraca pani do normalnego życia". Na szczęście miałam córkę pielęgniarkę, która powiedziała: „Mamo, poczekaj. Porozmawiajmy z kimś jeszcze".
+        </p>
+
+        <p>
+            Dziś wiem, dlaczego to było najmądrzejsze zdanie, jakie usłyszałam.
+        </p>
+
+        <!--
+        ИЗОБРАЖЕНИЕ 4 (операционная):
+        Сцена: общий план операционной во время флебологической операции. Хирурги в синих халатах
+        и масках склонились над пациентом, видны хирургические лампы, инструменты, монитор.
+        Без крови и шок-деталей — атмосферное «институциональное» фото. Передает серьёзность
+        хирургического вмешательства.
+        -->
+        <figure class="figure">
+            <img src="https://static.joxi.pro/1772708876076-27b1404c-a33d-471a-a037-43537de2613c.jpg" alt="">
+            <figcaption>
+                <b>Operacja żylaków to nie kosmetyka.</b> Ryzyko zakażenia, zakrzepicy i sepsy wzrasta o 60%. Rekonwalescencja jest długa i bolesna. <b>A w 2 na 3 przypadków po 3–5 latach żylaki wracają</b> — bo pierwotna przyczyna, osłabione ściany żył, pozostaje nietknięta.
+            </figcaption>
+        </figure>
+
+        <p>
+            Dr Zaremba pokazał mi statystyki, których nie znajdę w broszurze klinicznej: <span class="red">po operacji żylaków w 2/3 przypadków dochodzi do nawrotu w ciągu kilku lat, ponieważ pierwotna przyczyna — osłabione ściany żył — wciąż pozostaje.</span> A wielu pacjentów po operacji traci nie tylko zdrowie, ale i nadzieję. Powikłania, miesiące rekonwalescencji, przewlekły ból.
+        </p>
+
+        <h2>Objawy, których nie wolno ignorować po 40. roku życia</h2>
+
+        <p>
+            Dr Zaremba dał mi listę — mówi, że gdyby każdy Polak po czterdziestce ją przeczytał, kliniki flebologiczne pustoszały by w pół roku. Tylko w <span class="startdate"><script>dtime_nums(-201)</script></span> roku ponad 110 000 osób w Polsce otrzymało diagnozę poważnej niewydolności żylnej prowadzącej do kalectwa — w tym 20 000 osób między 40 a 45 rokiem życia. Te liczby nie kłamią.
+        </p>
+
+        <div class="symptoms">
+            <h3 style="margin-top:0">11 sygnałów alarmowych</h3>
+            <ul>
+                <li>Ciężkość i zmęczenie nóg już od rana</li>
+                <li>Obrzęki kostek nasilające się wieczorem</li>
+                <li>Ból i pieczenie wzdłuż żył</li>
+                <li>Nocne skurcze łydek</li>
+                <li>Wyraźnie widoczne, wypukłe żyły</li>
+                <li>Problemy przy długim staniu lub chodzeniu</li>
+                <li>Stałe uczucie ucisku w nogach</li>
+                <li>Swędzenie skóry wokół żył</li>
+                <li>Przebarwienia i stwardnienia skóry</li>
+                <li>Trudno gojące się rany</li>
+                <li>Pajączki naczyniowe na łydkach i udach</li>
+            </ul>
+        </div>
+
+        <p>
+            Każdy z tych objawów to czerwone światło. Trzy lub więcej naraz — to alarm. Oto, co czeka osoby, które przez lata go ignorują:
+        </p>
+
+        <!--
+        ИЗОБРАЖЕНИЯ 5-6 (галерея осложнений, парами):
+        Серия документальных медицинских фото осложнений варикоза — но снятых с уважением к зрителю,
+        без крупных планов на самые тяжёлые поражения. Каждое фото — иллюстрация одной стадии.
+        -->
+        <div class="figure-row">
+            <figure class="figure">
+                <!--
+                ИЗОБРАЖЕНИЕ 5а: Икра женщины 52 лет с обширной трофической язвой и потемнением кожи.
+                Снято сбоку, нейтральный свет, без шок-крупного плана.
+                -->
+                <img src="https://static.joxi.pro/1772709087450-0a27c2f1-5552-4b85-962a-a756a8e24328.jpg" alt="">
+                <figcaption>
+                    <b>Kobieta, 52 lata.</b> Zaawansowana niewydolność żylna z rozległymi owrzodzeniami i początkiem martwicy tkanek.
+                </figcaption>
+            </figure>
+            <figure class="figure">
+                <!--
+                ИЗОБРАЖЕНИЕ 5b: Голень с выпуклыми тёмно-синими венозными узлами III стадии варикоза.
+                Видна выраженная извитость вен под кожей. Документальный медицинский ракурс.
+                -->
+                <img src="https://static.joxi.pro/1772709947966-e7ce26d3-9d8c-48bd-bb03-6dc31980d851.jpg" alt="">
+                <figcaption>
+                    <b>Żylaki III stopnia.</b> Silnie poszerzone, wijące się żyły. Stały ból, który z dnia na dzień przybiera na sile.
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="figure-row">
+            <figure class="figure">
+                <!--
+                ИЗОБРАЖЕНИЕ 5c: Нога с признаками тромбофлебита: воспаление по ходу вены, покраснение,
+                отёк. Голень частично перевязана. Атмосфера больничной палаты.
+                -->
+                <img src="https://static.joxi.pro/1772709433588-e35dc4d4-34a5-42ac-8a01-1200e3d5d0c9.jpg" alt="">
+                <figcaption>
+                    <b>Zakrzepowe zapalenie żył.</b> Zablokowany przepływ krwi, utrata czucia, częściowy niedowład.
+                </figcaption>
+            </figure>
+            <figure class="figure">
+                <!--
+                ИЗОБРАЖЕНИЕ 5d: Сильно отёкшие лодыжки и стопы пожилого человека, сидящего на стуле.
+                Видны следы от обуви и носков, кожа натянута, блестит. Сцена обычной жизни.
+                -->
+                <img src="https://static.joxi.pro/1772710143255-8018c907-1ec4-48bd-aa46-6d3e1cf6acd4.jpg" alt="">
+                <figcaption>
+                    <b>Przewlekła niewydolność żylna.</b> Znaczne obrzęki, intensywny ból przy chodzeniu.
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="warning-box">
+            Każdy dzień z nieleczonymi żylakami przybliża do zakrzepicy i amputacji. Tysiące Polaków straciło zdrowe nogi tylko dlatego, że „czekali, aż samo przejdzie". <b>Niewydolność żylna nie cofa się sama — nigdy.</b>
+        </div>
+
+        <p>
+            — Wszyscy ci pacjenci byli przekonani, że ich to nie dotyczy — kontynuuje dr Zaremba. — Skutek? Wózek inwalidzki, zależność od opieki, koniec aktywnego życia. Ponad 90% osób staje się niepełnosprawnych tylko dlatego, że nie podjęli właściwych działań we właściwym czasie. Po pięćdziesiątce każdy miesiąc zwłoki to realne, fizyczne uszkodzenia, których już się nie cofnie.
+        </p>
+
+        <h2>
+            Zdumiewające wyniki nowej terapii
+            <span class="sub">Helena Kowalska, 89 lat, wstała z łóżka po 5 latach. Filip K., 44 lata, uniknął amputacji w 90 dni. To są przypadki, które zmieniły moje życie.</span>
+        </h2>
+
+        <p>
+            Kiedy córka pokazała mi pierwsze historie pacjentów dr. Zaremby, byłam sceptyczna. Pani Helena z Wrocławia, 89 lat — po dwóch i pół miesiąca terapii zaczęła sama chodzić do ogrodu. Pan Filip, 44 lata, pracownik magazynowy, miał umówioną amputację na kwiecień — odwołał ją po 21 dniach. Oto co napisała Helena:
+        </p>
+
+        <!--
+        ИЗОБРАЖЕНИЕ 7 (отзыв Helena):
+        Сцена: пожилая женщина 89 лет с седыми волосами, аккуратной причёской, в светлой блузке,
+        сидит в кресле у окна. Мягкая улыбка, в руках держит вязание. Уютная польская гостиная,
+        фотографии семьи на стене. Документальное портретное фото в стиле репортажа о пожилых.
+        -->
+        <div class="story-block">
+            <div class="story-block-head">
+                <img src="images/da896c23e368_8b55fd4e.png" alt="Helena Kowalska">
+                <div>
+                    <div class="story-block-name">Helena Kowalska</div>
+                    <div class="story-block-age">89 lat, Wrocław</div>
+                </div>
+            </div>
+            <p>
+                „Nigdy nie przypuszczałam, że we własnym mieszkaniu stanę się osobą całkowicie niesamodzielną. Wszystko zaczęło się od ciężkości i bólu, a po dwóch latach <b>czołgałam się po pokoju</b>, bo nie było mnie stać na leczenie. Gdy zaproponowano mi operację, przestałam wierzyć, że kiedykolwiek wrócę do zdrowia. Płakałam nocami."
+            </p>
+            <p>
+                <b>„Wtedy ktoś polecił mi terapię dr. Zaremby. Po dwóch i pół miesiąca nogi przestały boleć. Owrzodzenia się zagoiły, obrzęki zniknęły. Dziś sama wstaję, sama gotuję, sama chodzę do kościoła. Mam 89 lat i będę wdzięczna do końca moich dni."</b>
+            </p>
+        </div>
+
+        <p>
+            Drugą historią, która mną wstrząsnęła, był Filip Kowal. 44 lata, magazynier, dwoje dzieci. Po piętnastu latach pracy fizycznej miał zaawansowaną niewydolność żylną i zakrzepicę żył głębokich. Lekarze mówili: „amputacja, najlepiej szybko, zanim wda się sepsa".
+        </p>
+
+        <!--
+        ИЗОБРАЖЕНИЕ 8 (отзыв Filip):
+        Сцена: мужчина 44 лет, обычной внешности, в простой клетчатой рубашке, сидит за кухонным
+        столом в обычной польской квартире. Лёгкая улыбка, в руках чашка кофе. На фоне — обычная
+        семейная обстановка. Документальный портрет «нормального работающего человека».
+        -->
+        <div class="story-block">
+            <div class="story-block-head">
+                <img src="images/3a273fb77beb_32a03ccf.jpg" alt="Filip Kowal">
+                <div>
+                    <div class="story-block-name">Filip Kowal</div>
+                    <div class="story-block-age">44 lata, magazynier, Łódź</div>
+                </div>
+            </div>
+            <p>
+                „Trzy lata temu odczuwałem tylko lekką ciężkość nóg. Nigdy nie sądziłem, że może być aż tak źle. Pewnej nocy obudził mnie ból łydek — nie mogłem wstać. Diagnoza: zakrzepica żył głębokich z rozległymi owrzodzeniami. Padło słowo <b>amputacja</b>."
+            </p>
+            <p>
+                „Żona, Julia, nie odpuściła. To ona znalazła dr. Zarembę. Przesłał mi terapię, po trzech dniach poczułem ulgę. Kuracja trwała 90 dni — dziś wróciłem do pracy. <b>Wyniki badań są prawidłowe, owrzodzenia zagoiły się. Mam nogi 25-latka.</b>"
+            </p>
+        </div>
+
+        <h2>
+            Co dokładnie zawiera ta terapia?
+            <span class="sub">Formuła, którą dr Zaremba dopracowywał przez 11 lat. Każdy miligram ma znaczenie.</span>
+        </h2>
+
+        <p>
+            Dr Zaremba nigdy nie ukrywał składu. Wręcz przeciwnie — chciał, żebym sama zobaczyła, dlaczego ta receptura działa, a apteczne maści nie. Sama formuła nie jest skomplikowana, ale precyzyjny dobór proporcji ma kluczowe znaczenie. Procesy regeneracji żył uruchamiają się wyłącznie wtedy, gdy wszystkie proporcje są dokładnie zachowane — każdy naturalny składnik pełni swoją określoną rolę i działa bezpośrednio przez skórę.
+        </p>
+
+        <div class="recipe">
+            <div class="recipe-title">Receptura — 7 składników aktywnych</div>
+            <ul>
+                <li><b>Diosmina</b> <span class="src">ekstrakt z cytrusów · 4500 mg</span></li>
+                <li><b>Hesperydyna</b> <span class="src">skórka pomarańczy · 1100 mg</span></li>
+                <li><b>Rutyna</b> <span class="src">ekstrakt z gryki · 390 mg</span></li>
+                <li><b>Gingerol</b> <span class="src">ekstrakt z imbiru · 4200 mg</span></li>
+                <li><b>Escyna</b> <span class="src">kasztanowiec zwyczajny · 1100 mg</span></li>
+                <li><b>Resweratrol</b> <span class="src">ekstrakt z winogron · 320 mg</span></li>
+                <li><b>Kurkumina</b> <span class="src">ekstrakt z kurkumy · 2300 mg</span></li>
+            </ul>
+        </div>
+
+        <p>
+            Większość tych składników jest w Polsce trudno dostępna — wiele trzeba sprowadzać z różnych części świata. Co więcej, kluczowa jest precyzja dawkowania: 0,1 mg. To dlatego domowe przygotowanie tej receptury jest praktycznie niemożliwe.
+        </p>
+
+        <h2>Varicone — jedyny preparat, który łączy wszystkie te składniki w odpowiednich proporcjach</h2>
+
+        <div class="doctor-card">
+            <div class="doctor-card-head">
+                <img src="https://static.joxi.pro/1773234489768-bc0de7f3-9c27-49e5-b277-5973e237b0bd.jpg" alt="dr Tomasz Zaremba">
+                <div>
+                    <div class="name">dr Tomasz Zaremba</div>
+                    <div class="title">o preparacie Varicone</div>
+                </div>
+            </div>
+            <p>
+                — Stworzyliśmy tylko jeden taki preparat, bo pozyskanie składników w odpowiedniej czystości jest niezwykle trudne. Nazywa się <b>Varicone</b>. To jedyna formuła, która potrafi uruchomić odbudowę żył na poziomie komórkowym. Zawiera 7 składników podstawowych w precyzyjnych proporcjach plus <b>29 rzadkich ekstraktów</b> i kompleks witamin, które wielokrotnie zwiększają zdolność regeneracji naczyń krwionośnych.
+            </p>
+            <p>
+                Sekret tkwi w <b>„Hipermolekularnej Technologii Ekstrakcji"</b> opracowanej w 2021 roku — pozwala pozyskiwać składniki aktywne z dokładnością do 0,01 nm. Skuteczność rośnie 3,5–5,5-krotnie. Przenikanie przez skórę zwiększyliśmy o niemal 400%.
+            </p>
+        </div>
+
+        <!--
+        ИЗОБРАЖЕНИЕ 9 (продукт):
+        Сцена: студийное фото упаковки Varicone (тёмно-синяя коробочка с белой этикеткой),
+        стоит на кремовом фоне рядом с тюбиком/баночкой препарата. Композиция «как в аптеке»:
+        чисто, профессионально, медицинская эстетика. Лёгкая тень. Возможны элементы фона:
+        стилизованные листья ингредиентов (имбирь, конский каштан).
+        -->
+        <div class="product-shot">
+            <img src="https://static.joxi.pro/1772715210361-ed03311b-f36a-425f-ae39-1c5013d07a0f.jpg" alt="Varicone">
+        </div>
+
+        <div class="pullquote">
+            „Varicone nie maskuje objawów. On <b>uruchamia w komórkach ściany żylnej pamięć o tym, jak wyglądały, gdy miałaś pani 25 lat</b>. Reszta dzieje się sama."
+            <span class="pullquote-author">— dr Tomasz Zaremba</span>
+        </div>
+
+        <h2>4 mechanizmy działania, które uruchamiają regenerację ścian żył</h2>
+
+        <div class="mechanisms">
+            <div class="mechanisms-head">Jak działa Varicone — krok po kroku</div>
+            <ol class="mechanisms-list">
+                <li>
+                    <span class="lead">Redukcja bólu, obrzęków i stanu zapalnego żył</span>
+                    <span class="desc">Od pierwszych dni stosowania łagodzi ból, ciężkość i obrzęki nóg. Składniki aktywne wspierają naturalne mechanizmy przeciwzapalne organizmu.</span>
+                </li>
+                <li>
+                    <span class="lead">Zatrzymanie niszczenia żył związanego z wiekiem</span>
+                    <span class="desc">Po 2–5 dniach regularnego stosowania hamuje dalsze osłabianie ścian żylnych. Blokuje procesy degeneracyjne, przywraca elastyczność.</span>
+                </li>
+                <li>
+                    <span class="lead">Aktywacja komórek regeneracyjnych naczyń</span>
+                    <span class="desc">Aktywuje komórki ścian żylnych, stymuluje odbudowę uszkodzonych naczyń, przywraca prawidłowy przepływ krwi. To kluczowy etap terapii.</span>
+                </li>
+                <li>
+                    <span class="lead">Bariera ochronna przed nawrotem</span>
+                    <span class="desc">Po 30 dniach naczynia krwionośne osiągają stabilną ochronę. To skuteczna profilaktyka zakrzepicy i nawrotu żylaków na lata.</span>
+                </li>
+            </ol>
+        </div>
+
+        <h2>
+            Wyniki badań klinicznych
+            <span class="sub">1 980 pacjentów w wieku 40–80 lat. Ośrodki w Polsce, Niemczech i USA.</span>
+        </h2>
+
+        <div class="results-table">
+            <div class="results-table-head">Skuteczność Varicone w grupie kontrolnej (1 980 osób, 40–80 lat)</div>
+            <table>
+                <tbody>
+                    <tr><td class="label">Eliminacja bólu, pieczenia i ciężkości nóg</td><td class="value">100%</td></tr>
+                    <tr><td class="label">Pełne ustąpienie obrzęków</td><td class="value">93,4%</td></tr>
+                    <tr><td class="label">Zakrzepowe zapalenie żył powierzchownych</td><td class="value">97,0%</td></tr>
+                    <tr><td class="label">Żylaki (redukcja i ustąpienie)</td><td class="value">98,9%</td></tr>
+                    <tr><td class="label">Przewlekła niewydolność żylna</td><td class="value">97,6%</td></tr>
+                    <tr><td class="label">Zakrzepica żył głębokich</td><td class="value">84,4%</td></tr>
+                    <tr><td class="label">Owrzodzenia żylne</td><td class="value">94,3%</td></tr>
+                    <tr><td class="label">Przebarwienia i stwardnienia skóry</td><td class="value">96,9%</td></tr>
+                    <tr><td class="label">Nocne skurcze łydek</td><td class="value">93,0%</td></tr>
+                    <tr><td class="label">Pełna odbudowa ścian żylnych</td><td class="value">99,4%</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Ile trwa terapia i kiedy zobaczysz pierwsze efekty?</h2>
+
+        <div class="doctor-card">
+            <div class="doctor-card-head">
+                <img src="https://static.joxi.pro/1773234489768-bc0de7f3-9c27-49e5-b277-5973e237b0bd.jpg" alt="dr Tomasz Zaremba">
+                <div>
+                    <div class="name">dr Tomasz Zaremba</div>
+                    <div class="title">o przebiegu terapii</div>
+                </div>
+            </div>
+            <p>
+                — Minimalny czas terapii to <b>30 dni</b>. W cięższych przypadkach — 2 lub 3 miesiące. Ale w każdym przypadku, bez wyjątku, obserwowaliśmy pełną odbudowę ścian żylnych. Niezależnie od wieku.
+            </p>
+            <p>
+                Co ważne: <b>Varicone łagodzi ciężkość i ból już w pierwszych minutach po nałożeniu</b>. Wspiera profilaktykę zakrzepicy, przyspiesza gojenie owrzodzeń, wzmacnia ściany naczyń. A co najważniejsze — <span class="red">odmładza nogi</span>.
+            </p>
+        </div>
+
+        <p style="text-align:center; font-style:italic;">
+            <b>Dzięki Varicone ponad 17 000 osób w Polsce uwolniło się od żylaków i odzyskało lekkie nogi.</b>
+        </p>
+
+        <!--
+        ИЗОБРАЖЕНИЯ 10-12 (галерея «до/после»):
+        Серия сравнительных фото пациентов — ноги до и после терапии Varicone.
+        Тёплый свет, документальный стиль, без шок-крупных планов.
+        Видно реальную разницу: уменьшение узлов, заживление язв, нормализация цвета кожи.
+        -->
+        <figure class="figure">
+            <!--
+            ИЗОБРАЖЕНИЕ 10: Сравнительное фото «до/после» — ноги женщины 62 лет.
+            Слева: выраженные варикозные узлы, отёк. Справа: чистая кожа, нормальный контур.
+            Снято в одинаковых условиях, для убедительности сравнения.
+            -->
+            <img src="https://static.joxi.pro/1772715711977-5c4b5fee-c3f5-4c33-99f4-7de3210a16ce.jpg" alt="">
+            <figcaption>
+                <b>Kobieta, 62 lata.</b> Zaawansowane żylaki z owrzodzeniami. Varicone w 90 dni — pełna odbudowa ścian żył, zagojone owrzodzenia.
+            </figcaption>
+        </figure>
+
+        <div class="figure-row">
+            <figure class="figure">
+                <!--
+                ИЗОБРАЖЕНИЕ 11a: «До/после» — ноги женщины 44 лет. Сильные отёки и сетка вен слева,
+                чистая стройная нога справа. Одинаковый ракурс.
+                -->
+                <img src="https://static.joxi.pro/1772712488805-5f7e2fe5-a36e-4dab-8850-55b6f5c49e9f.jpg" alt="">
+                <figcaption><b>Kobieta, 44 lata.</b> Pełna regeneracja w 2,5 miesiąca.</figcaption>
+            </figure>
+            <figure class="figure">
+                <!--
+                ИЗОБРАЖЕНИЕ 11b: «До/после» — голень мужчины 37 лет. Узлы и припухлость слева,
+                здоровый вид справа.
+                -->
+                <img src="https://static.joxi.pro/1772711741216-76c24a6e-ac61-4b11-af3b-7d9136897ba7.jpg" alt="">
+                <figcaption><b>Mężczyzna, 37 lat.</b> Pełne ustąpienie żylaków w 1,5 miesiąca.</figcaption>
+            </figure>
+        </div>
+
+        <div class="figure-row">
+            <figure class="figure">
+                <!--
+                ИЗОБРАЖЕНИЕ 12a: «До/после» — голень женщины 51 года. Видны коричневатые пигментации
+                и уплотнения слева, ровный цвет справа.
+                -->
+                <img src="https://static.joxi.pro/1772711475671-bd316744-9407-4939-9a51-757af982371e.jpg" alt="">
+                <figcaption><b>Kobieta, 51 lat.</b> Ustąpienie przebarwień skóry w 60 dni.</figcaption>
+            </figure>
+            <figure class="figure">
+                <!--
+                ИЗОБРАЖЕНИЕ 12b: «До/после» — ноги женщины 69 лет. Тромбофлебит и язвы слева,
+                здоровая кожа справа.
+                -->
+                <img src="https://static.joxi.pro/1772712335482-c0ec1687-6382-4f47-924b-33768962b624.jpg" alt="">
+                <figcaption><b>Kobieta, 69 lat.</b> Pełna odbudowa żył i krążenia w 2,5 miesiąca.</figcaption>
+            </figure>
+        </div>
+
+        <h2>
+            Dlaczego Varicone nie jest dostępny w aptekach?
+            <span class="sub">Lista oczekujących 4–6 miesięcy. Program wsparcia tylko 2 razy w roku.</span>
+        </h2>
+
+        <p>
+            Produkcja Varicone jest złożona i kosztowna. Fizycznie nie można zaopatrzyć wszystkich potrzebujących. Obecnie preparat dystrybuujemy wyłącznie online — dwa razy w roku, w ramach programów wsparcia. To system, który ma jednak zaletę: <span class="red">zniżki sięgają nawet 50%</span> dzięki bezpośredniemu udziałowi w programach dofinansowania. To szczególnie ważne dla emerytów.
+        </p>
+
+        <h2>Ostatnia szansa w tym roku</h2>
+
+        <!--
+        ИЗОБРАЖЕНИЕ 13 (программа поддержки):
+        Сцена: упаковки Varicone аккуратно сложены на складе или в офисе, рядом — папки
+        с документами, печать «PROGRAM WSPARCIA». Атмосфера серьёзной официальной программы.
+        Тёплый свет, документальный стиль. Можно: рука сотрудника проверяет упаковку.
+        -->
+        <img src="https://static.joxi.pro/1773234489768-d4d60e52-0222-42ef-83a0-f1f131a9e573.jpg" alt="" style="max-width:500px; margin: 24px auto; border: 1px solid #d9cfb8; padding: 6px; background: #fff;">
+
+        <p>
+            W tym roku zabezpieczono finansowanie i odłożono <b>20 000 opakowań</b> wyłącznie dla czytelników tego portalu. Każdy mieszkaniec Polski powyżej 40. roku życia może otrzymać <span class="red">50% zniżki</span> — ale program kończy się <b><span><script>dtime_nums(0, true)</script></span></b>.
+        </p>
+
+        <p>
+            Aby wziąć udział, wystarczy podać imię i numer telefonu w formularzu. Konsultant skontaktuje się, dobierze indywidualny program terapii i zorganizuje dostawę w 2–3 dni — bezpośrednio pod wskazany adres.
+        </p>
+
+        <div class="update-box">
+            <b>Aktualizacja <span><script>dtime_nums(-3, true)</script></span>:</b> Ze względu na duże zainteresowanie pula może wyczerpać się szybciej, niż przewidywano. Dziś — <span><script>dtime_nums(1, true)</script></span> — ostatni dzień programu lub do wyczerpania zapasów.
+        </div>
+
+        <p style="text-align:center; font-style:italic; margin-top:30px;">
+            Życzę wszystkim zdrowia. Dbajcie o siebie.
+            <br>
+            <b>— Barbara Kowalska, 62 lata, Kraków</b>
+        </p>
+
+        <!-- ========== ФОРМА ЗАКАЗА ========== -->
+        <span id="form"></span>
+        <span id="oneform"></span>
+
+        <div class="product-shot" style="margin-top: 40px;">
+            <img src="images/product.png?=v1" alt="Varicone" style="max-width: 200px;">
+        </div>
+
+        <p style="text-align:center; color:#b8252d; font-weight:600; font-size:17px;">
+            Uwaga! Nie zamykaj ani nie odświeżaj strony — zarezerwowane opakowanie Varicone zostanie przekazane innej osobie.
+        </p>
+        <p style="text-align:center; color:#2d7a3e; font-weight:600;">
+            Twoje miejsce jest zabezpieczone: Nr <span style="border-bottom: 2px solid #b8252d;">19&nbsp;974</span>
+        </p>
+
+        <div class="cta-form">
+            <div class="cta-form-head">
+                <h3>Oficjalny formularz zamówienia</h3>
+                <div class="meta">Nr 19&nbsp;974 / 20 000</div>
+            </div>
+            <div class="cta-body">
+                <div class="cta-info">
+                    Aby skorzystać z <b>50% zniżki</b>, wpisz swoje imię i numer telefonu i kliknij „ZAMÓW".
+                </div>
+                <div class="cta-stock">
+                    Pozostało w magazynie: <strong>33</strong> / 1000
+                </div>
+                <div class="cta-prices">
+                    <span class="price-old">318 PLN</span>
+                    <span class="price-new">159 PLN</span>
+                </div>
+                <form action="/order.php" method="post">
+                    <input type="hidden" name="fbpx" value="{fbpx}">
+                    <input type="hidden" name="utm_code" value="{subid}">
+                    <input type="hidden" name="cid" value="{campaign_id}">
+                    <input type="hidden" name="sid" value="502">
+                    <input type="hidden" name="hash" value="{hash}">
+                    <input type="hidden" name="country" value="PL">
+
+                    <label for="name-input">Imię</label>
+                    <input id="name-input" name="name" placeholder="Twoje imię" required type="text" autocomplete="name">
+
+                    <label for="phone-input">Numer telefonu</label>
+                    <input id="phone-input" name="phone" maxlength="20" pattern="^[\-+() 0-9]{8,20}$" placeholder="Twój numer telefonu" required type="tel" autocomplete="tel">
+
+                    <button class="cta-submit" type="submit">ZAMÓW Z 50% ZNIŻKĄ</button>
+                </form>
+                <div class="cta-footer">
+                    ✔ Dostawę realizuje Narodowe Centrum Zdrowia bezpośrednio pod wskazany adres
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== КОММЕНТАРИИ ========== -->
+        <div class="comments">
+            <div class="comments-head">KOMENTARZE CZYTELNIKÓW</div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: пожилая полька 65 лет, седые волосы, доброе лицо, светлый свитер -->
+                    <img src="images/7da17fc86c6c_2f1260d0.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Maria Lewandowska</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Pani Basiu, czytałam Pani historię ze łzami w oczach. Przez 10 lat brałam tabletki i maści — wątrobę mam zmarnowaną. Od znajomych słyszałam dobre opinie o Varicone. Dziś wreszcie zamówiłam z dużą zniżką. Bóg zapłać za ten artykuł!
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: женщина около 55 лет, простая, в очках, тёплая улыбка -->
+                    <img src="images/8ba73d45c164_4ede289a.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Lucyna Kaczmarek</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Paczkę dostałam w poniedziałek. Po tygodniu — ogromna ulga. Nogi lżejsze, obrzęki prawie zniknęły. Przejdę całą kurację. Nie mogę się doczekać, aż znów pójdę z wnukiem do parku.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: пожилая женщина 69 лет с короткой седой причёской, скромная блуза -->
+                    <img src="images/fa7f61c1431c_7946ff6c.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Anna Piotrowska</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Mam 69 lat. Przez 2 lata ciężkość nóg, potem żylaki, w końcu owrzodzenia. Lekarz powiedział: „proszę się przyzwyczaić, to wiek". Po 2 miesiącach Varicone — żyły się odbudowały, obrzęki zniknęły. Chodzę jak za młodu! Pani Basiu, dziękuję, że Pani napisała.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: мужчина около 60 лет, седеющий, в простой рубашке, серьёзное лицо -->
+                    <img src="images/dcc5cfe80d60_5aa7f8f7.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Celestyn Pawlak</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Pracuję siedząco od 30 lat. Niewydolność żylna była nie do zniesienia, lekarze tylko rozkładali ręce. Varicone dosłownie mnie uratował przed zakrzepicą. Lepiej reagować wcześniej niż czekać na operację.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: мужчина 55 лет, спокойное лицо, лёгкая седина -->
+                    <img src="images/bcbe20e0b5d2_b241da99.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Tomasz Dąbrowski</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Dr Zaremba ma rację — apteczna chemia szkodzi bardziej niż sam żylak. Lepiej ziołami niż truć wątrobę. W aptekach niczego dobrego dziś nie znajdziesz.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: женщина 50 лет, обычная, в платье в горошек, сомневающийся взгляд -->
+                    <img src="images/73d3a879cef9_4a9ce85c.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Adelina Nowak</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Wciąż się waham. Skąd mam wiedzieć, że to nie są puste obietnice? Mam zaplanowaną operację za 3 tygodnie…
+                </div>
+            </div>
+
+            <div class="comment reply">
+                <div class="comment-head">
+                    <!-- АВАТАР: женщина 58 лет, дружелюбное лицо, отвечает на сомнения -->
+                    <img src="images/71deaf909b4e_ea30d07c.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Inez Kowalczyk</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Pani Adelino, ja też byłam sceptyczna. Spróbowałam głównie dla zniżki. Po miesiącu Varicone — żyły jak nowe. Wcześniej ledwo chodziłam, dziś znów spaceruję z wnukami. Niech Pani nie odkłada.
+                </div>
+            </div>
+
+            <div class="comment reply">
+                <div class="comment-head">
+                    <!-- АВАТАР: мужчина 62 года, седой, в кардигане -->
+                    <img src="images/66ebad51123a_206d5fba.png" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Antoni Duda</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Pani Adelino, też byłem przygotowany do operacji. Spróbowałem Varicone — po 2,5 miesiąca problem zniknął. Niech Pani próbuje.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: женщина 48 лет, активная, добродушная -->
+                    <img src="images/fd9eb915b838_59aa235e.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Karolina Olszewska</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Żylaki rosły z miesiąca na miesiąc. Kremy, maści — nic. Varicone w 1,5 miesiąca prawie je zlikwidował. Oto efekt:
+                    <br>
+                    <!--
+                    ИЗОБРАЖЕНИЕ В КОММЕНТАРИИ: фото ноги пользователя «до и после».
+                    Видна разница: уменьшение варикозных узлов, чистая кожа.
+                    -->
+                    <img src="https://static.joxi.pro/1772712689885-750124b2-4c62-4715-bccf-1b92bd83e6f0.jpg" style="max-width: 440px; width: 100%;">
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: пожилой мужчина 82 года, мудрое лицо, седина -->
+                    <img src="images/a49c7ec0724d_6f186c1c.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Edward Dąbrowski</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Mam 82 lata. Przez 2 lata nogi mi odmówiły posłuszeństwa. Nie wierzyłem, że Varicone pomoże, ale zadziałał od razu. Czuję się jak 50 lat młodszy.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: мужчина 50 лет, серьёзный, в очках -->
+                    <img src="images/14fcabaa91a3_d3871213.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Dominik Fedorowicz</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Pół roku temu trafiłem na Varicone. W ciągu 2 miesięcy żyły całkowicie się odbudowały. Mój efekt:
+                    <br>
+                    <!-- ИЗОБРАЖЕНИЕ В КОММЕНТАРИИ: фото «до/после» голеней мужчины 50 лет -->
+                    <img src="https://static.joxi.pro/1772712860926-5a34dc84-2b43-46a4-a955-e1ab12ce2a20.jpg" style="max-width: 440px; width: 100%;">
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: женщина 55 лет, заботливое лицо матери -->
+                    <img src="images/c364fa7fabf3_734a4c7f.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Mariana Kaczor</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Zamówiłam Varicone dla córki. Miała niewydolność III stopnia, proponowano operację. Po 2,5 miesiąca pełne wyleczenie. To niesamowite!
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: мужчина 65 лет, тёплое лицо, благодарность -->
+                    <img src="images/7099c502f996_b89c4cc9.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Franciszek Pawlik</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Moja żona była przykuta do łóżka z bólu. Bała się, że ją zostawię. Zamówiliśmy Varicone z 50% zniżką. Po 4 tygodniach po raz pierwszy wyszła do ogrodu — promieniała! Dziękuję dr. Zarembie za otwieranie ludziom oczu.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: пожилая женщина 71 год, седые волосы, добрая улыбка -->
+                    <img src="images/b35ad35f2989_d19c0bad.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Irena Wójcik</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Mam 71 lat. Przez 5 lat — ciężkość, żylaki, zakrzepica, owrzodzenia. Ból nie do zniesienia, płakałam nocami. Po 1,5 miesiąca Varicone — żyły niemal całkowicie się odbudowały. Lekarz nie mógł uwierzyć. Oto wynik:
+                    <br>
+                    <!-- ИЗОБРАЖЕНИЕ В КОММЕНТАРИИ: фото «до/после» ног пожилой женщины 71 года -->
+                    <img src="https://static.joxi.pro/1772710280947-f43f9167-dbde-43e6-8ff8-99b040878fa9.jpg" style="max-width: 520px; width: 100%;">
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: женщина 47 лет, городской вид, сомнения по поводу аллергии -->
+                    <img src="images/95700a967e85_c7b9fe05.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Zuzanna Espańska</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Czy ktoś miał alergię na Varicone? Jestem uczulona na większość leków. Boję się próbować.
+                </div>
+            </div>
+
+            <div class="comment reply">
+                <div class="comment-head">
+                    <!-- АВАТАР: мужчина 53 года, спокойный, рассудительный -->
+                    <img src="images/d653e647ce29_c22febb7.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Artur Bator</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Jestem alergikiem. Stosowałem Varicone 2 miesiące — zero reakcji. Produkt hipoalergiczny, testowany. Żyły działają lepiej, obrzęki zniknęły.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: пожилая женщина 68 лет, активная, бодрая -->
+                    <img src="images/71bb14a12f9e_280a6001.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Celina Borowska</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Myślałam, że umrę na kanapie przed telewizorem. Córka zamówiła Varicone 3 miesiące temu. Dziś żyły jak nowe — tańczę i żyję aktywnie!
+                    <br>
+                    <!-- ИЗОБРАЖЕНИЕ В КОММЕНТАРИИ: фото «после» — здоровые ноги пожилой женщины -->
+                    <img src="images/6324fc9278c8_776273f8.png" style="max-width: 470px; width: 98%;">
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: женщина 52 года, добрая, заботится об отце -->
+                    <img src="images/2d72d731d826_3ff382cb.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Klara Piskorska</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Zamówiłam dla taty. Miał straszne bóle i skurcze. Po 2 tygodniach uśmiecha się i nie narzeka. Ogromna pomoc!
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: женщина 56 лет, эмоциональная, история про дочь и маму -->
+                    <img src="images/df3e8c2eb745_86a29b61.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Amelia Fidoń</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Mama strasznie cierpiała. Budziła się nocą i krzyczała z bólu. Sąsiadka opowiedziała o Varicone — zamówiliśmy. Po tygodniu mama się uśmiechała, dziś wyszła na spacer pierwszy raz od 2 lat. Varicone oddał mi mamę.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: женщина 60 лет, благодарность за быструю доставку -->
+                    <img src="images/3a80730702e4_15a7bfcf.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Natalia Duras</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    50% zniżki — szok. Dostawa po Polsce 2 dni, naprawdę szybko. Polecam.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <!-- АВАТАР: мужчина 58 лет, благодарный, седеющий -->
+                    <img src="images/d770c7a4cbdf_467ee117.jpg" class="comment-avatar" alt="">
+                    <div>
+                        <div class="comment-name">Franciszek Heder</div>
+                        <div class="comment-date"><script>dtime_nums(-3, true)</script></div>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    Próbowałem znaleźć Varicone w aptekach — niemożliwe. Najlepiej zamówić bezpośrednio z tej strony. Dziękuję pani Basi za artykuł.
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+</div>
+
+<script>
+$('[name="name"]').on("input", function () {
+    var val = $(this).val();
+    var cleaned = val.replace(/[^a-zA-Zа-яА-ЯёЁąćęłńóśźżĄĆĘŁŃÓŚŹŻ ]/g, "").replace(/^\s+/, "").replace(/\s\s+/, " ");
+    var parts = cleaned.split(" ");
+    if (parts.length > 2) { cleaned = parts[0] + " " + parts[1]; }
+    $(this).val(cleaned);
+});
+$('[name="name"]').on("change blur", function () { $(this).val($(this).val().trim()); });
+$('[name="phone"]').on("input change", function(e) {
+    var val = $(this).val();
+    $(this).val(val.replace(/\D/g, ""));
+    $(e.currentTarget).attr("pattern", "[0-9]{6,}");
+});
+$("a").on("touchend click", function (e) {
+    e.preventDefault();
+    $('body,html').animate({ scrollTop: $('#oneform').offset().top }, 400);
+});
+</script>
+
+</body>
+</html>
